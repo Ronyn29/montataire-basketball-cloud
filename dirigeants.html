@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Équipe encadrante - Montataire Basket-ball</title>
+  <meta name="description" content="Découvrez l'équipe encadrante du Montataire Basket-ball : dirigeants, entraîneurs, bénévoles et référents du club.">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -26,31 +29,36 @@
       }
     };
   </script>
+
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
-  <meta name="description" content="Découvrez l'équipe encadrante du Montataire Basket-ball : dirigeants, entraîneurs, bénévoles et référents du club.">
 </head>
 
 <body class="bg-white text-black">
   <script src="js/header.js" defer></script>
 
-  <main class="max-w-5xl mx-auto px-4 py-16 space-y-16" data-animate>
-    <h1 class="text-3xl font-bold text-primary text-center mb-8">Équipe encadrante</h1>
+  <!-- En-tête sobre et pro -->
+  <section class="py-16 bg-primary text-white text-center">
+    <h1 class="text-4xl font-bold mb-2">👥 Équipe encadrante</h1>
+    <p class="text-lg text-white/90">Les personnes qui font vivre le Montataire Basket-ball</p>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-16">
 
     <!-- Bureau -->
     <section>
-      <h2 class="text-xl font-semibold text-secondary mb-6">Membres du bureau</h2>
+      <h2 class="text-2xl font-bold text-secondary mb-6">🏛️ Membres du bureau</h2>
       <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
-        <div class="bg-gray-100 p-4 rounded-xl shadow">
-          <h3 class="font-bold text-primary">Jean Dupont</h3>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="font-bold text-primary text-lg">Jean Dupont</h3>
           <p class="text-sm text-gray-700">Président</p>
         </div>
-        <div class="bg-gray-100 p-4 rounded-xl shadow">
-          <h3 class="font-bold text-primary">Sarah Lebrun</h3>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="font-bold text-primary text-lg">Sarah Lebrun</h3>
           <p class="text-sm text-gray-700">Trésorière</p>
         </div>
-        <div class="bg-gray-100 p-4 rounded-xl shadow">
-          <h3 class="font-bold text-primary">Michel Morel</h3>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="font-bold text-primary text-lg">Michel Morel</h3>
           <p class="text-sm text-gray-700">Secrétaire</p>
         </div>
       </div>
@@ -58,32 +66,44 @@
 
     <!-- Staff technique -->
     <section>
-      <h2 class="text-xl font-semibold text-secondary mb-6">Staff technique</h2>
+      <h2 class="text-2xl font-bold text-secondary mb-6">🏀 Staff technique</h2>
       <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
-        <div class="bg-gray-100 p-4 rounded-xl shadow">
-          <h3 class="font-bold text-primary">Karim Benaïssa</h3>
-          <p class="text-sm text-gray-700">Responsable technique / Coach U18</p>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="font-bold text-primary text-lg">Karim Benaïssa</h3>
+          <p class="text-sm text-gray-700">Responsable technique<br />Coach U18</p>
         </div>
-        <div class="bg-gray-100 p-4 rounded-xl shadow">
-          <h3 class="font-bold text-primary">Élodie Marchand</h3>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="font-bold text-primary text-lg">Élodie Marchand</h3>
           <p class="text-sm text-gray-700">Coach U11 & U13</p>
         </div>
-        <div class="bg-gray-100 p-4 rounded-xl shadow">
-          <h3 class="font-bold text-primary">Kevin Rolland</h3>
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-md transition">
+          <h3 class="font-bold text-primary text-lg">Kevin Rolland</h3>
           <p class="text-sm text-gray-700">Coach Seniors</p>
         </div>
       </div>
     </section>
 
-    <!-- Référents & bénévoles -->
+    <!-- Référents -->
     <section>
-      <h2 class="text-xl font-semibold text-secondary mb-6">Référents et bénévoles</h2>
-      <ul class="list-disc list-inside text-gray-700 space-y-2">
-        <li>Logistique & Matériel : Nadia Fernandez</li>
-        <li>Responsable buvette : André De Sousa</li>
-        <li>Communication & Réseaux sociaux : Lina Gacem</li>
-        <li>Référent santé & sécurité : David Delaunay</li>
-      </ul>
+      <h2 class="text-2xl font-bold text-secondary mb-6">🙌 Référents & bénévoles</h2>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-secondary shadow-sm">
+          <p class="font-medium text-gray-800">Logistique & Matériel</p>
+          <p class="text-sm text-gray-600">Nadia Fernandez</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-secondary shadow-sm">
+          <p class="font-medium text-gray-800">Responsable buvette</p>
+          <p class="text-sm text-gray-600">André De Sousa</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-secondary shadow-sm">
+          <p class="font-medium text-gray-800">Communication & Réseaux sociaux</p>
+          <p class="text-sm text-gray-600">Lina Gacem</p>
+        </div>
+        <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-secondary shadow-sm">
+          <p class="font-medium text-gray-800">Référent santé & sécurité</p>
+          <p class="text-sm text-gray-600">David Delaunay</p>
+        </div>
+      </div>
     </section>
   </main>
 

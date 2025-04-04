@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Actualités - Montataire Basket-ball</title>
+  <meta name="description" content="Toutes les actualités du club Montataire Basket-ball : événements, résultats, annonces et vie du club.">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -26,42 +29,60 @@
       }
     };
   </script>
+
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
-  <meta name="description" content="Toutes les actualités du club Montataire Basket-ball : événements, résultats, annonces et vie du club.">
 </head>
 
 <body class="bg-white text-black">
+  <!-- Header -->
   <script src="js/header.js" defer></script>
 
-  <main class="max-w-5xl mx-auto px-4 py-16 space-y-16" data-animate>
-    <h1 class="text-3xl font-bold text-primary text-center mb-6">Actualités du club</h1>
+  <!-- En-tête simple -->
+  <section class="py-16 bg-primary text-white text-center animate-fade-in" data-animate>
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">📰 Actualités du club</h1>
+    <p class="text-lg md:text-xl text-white/90">Les dernières infos, résultats et événements du Montataire Basket-Ball</p>
+  </section>
+
+  <!-- Contenu principal -->
+  <main class="max-w-5xl mx-auto px-4 py-16 space-y-16 animate-fade-in" data-animate>
 
     <!-- Actu 1 -->
-    <article class="bg-gray-100 rounded-xl shadow p-6 space-y-4">
-      <p class="text-sm text-gray-500">Publié le 31 mars 2025</p>
+    <article class="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition p-6 space-y-4">
+      <div class="flex items-center justify-between text-sm text-gray-500">
+        <span>📅 31 mars 2025</span>
+        <span class="text-secondary font-medium">U13</span>
+      </div>
       <h2 class="text-2xl font-bold text-secondary">🏀 Résultats du week-end : les U13 brillent à domicile</h2>
       <p class="text-gray-700">Nos benjamins et benjamines (U13) ont remporté leurs matchs respectifs samedi à domicile ! Bravo aux jeunes et aux coachs pour leur engagement sur le terrain.</p>
-      <img src="images/actu-u13.jpg" alt="Victoire U13" class="rounded-lg w-full max-h-96 object-cover" />
+      <img src="images/actu-u13.jpg" alt="Victoire U13" class="rounded-lg w-full max-h-96 object-cover" loading="lazy" />
     </article>
 
     <!-- Actu 2 -->
-    <article class="bg-gray-100 rounded-xl shadow p-6 space-y-4">
-      <p class="text-sm text-gray-500">Publié le 24 mars 2025</p>
+    <article class="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition p-6 space-y-4">
+      <div class="flex items-center justify-between text-sm text-gray-500">
+        <span>📅 24 mars 2025</span>
+        <span class="text-secondary font-medium">Tournoi</span>
+      </div>
       <h2 class="text-2xl font-bold text-secondary">🎉 Tournoi interquartiers : un vrai succès !</h2>
       <p class="text-gray-700">Merci à tous les participants, bénévoles et partenaires pour cet événement convivial qui a rassemblé petits et grands autour de notre passion commune.</p>
-      <img src="images/tournoi.jpg" alt="Tournoi local" class="rounded-lg w-full max-h-96 object-cover" />
+      <img src="images/tournoi.jpg" alt="Tournoi local" class="rounded-lg w-full max-h-96 object-cover" loading="lazy" />
     </article>
 
     <!-- Actu 3 -->
-    <article class="bg-gray-100 rounded-xl shadow p-6 space-y-4">
-      <p class="text-sm text-gray-500">Publié le 15 mars 2025</p>
+    <article class="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition p-6 space-y-4">
+      <div class="flex items-center justify-between text-sm text-gray-500">
+        <span>📅 15 mars 2025</span>
+        <span class="text-secondary font-medium">Équipement</span>
+      </div>
       <h2 class="text-2xl font-bold text-secondary">📣 Nouvelle tenue officielle 2025</h2>
       <p class="text-gray-700">Découvrez nos nouvelles tenues pour la saison ! Merci à nos partenaires pour leur contribution. Disponible très bientôt à la boutique du club.</p>
-      <img src="images/maillot-2025.jpg" alt="Tenues officielles 2025" class="rounded-lg w-full max-h-96 object-cover" />
+      <img src="images/maillot-2025.jpg" alt="Tenues officielles 2025" class="rounded-lg w-full max-h-96 object-cover" loading="lazy" />
     </article>
+
   </main>
 
+  <!-- Footer + Scripts -->
   <script src="js/footer.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/animations.js" defer></script>

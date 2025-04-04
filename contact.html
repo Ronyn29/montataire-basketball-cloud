@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Montataire Basket-ball</title>
+  <meta name="description" content="Contactez le Montataire Basket-ball pour toute question, proposition ou demande de partenariat.">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -26,37 +29,46 @@
       }
     };
   </script>
+
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
-  <meta name="description" content="Contactez le Montataire Basket-ball pour toute question, proposition ou demande de partenariat.">
 </head>
 
 <body class="bg-white text-black">
+  <!-- Header -->
   <script src="js/header.js" defer></script>
 
-  <main class="max-w-3xl mx-auto px-4 py-16" data-animate>
-    <h1 class="text-3xl font-bold text-primary text-center mb-8">Contactez-nous</h1>
+  <main class="max-w-3xl mx-auto px-4 py-16 animate-fade-in" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-10">Contactez-nous</h1>
 
-    <section class="bg-gray-100 p-6 rounded-xl shadow space-y-6">
-      <p class="text-gray-700">Remplissez le formulaire ci-dessous pour nous envoyer un message. Nous vous répondrons dans les plus brefs délais.</p>
+    <!-- Section de contact -->
+    <section class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow space-y-6">
+      <p class="text-gray-700 text-sm leading-relaxed">
+        Une question ? Une proposition ? Envie de nous rejoindre ou de devenir partenaire ?
+        Utilisez le formulaire ci-dessous ou contactez-nous directement.
+      </p>
 
-      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
-        <!-- Nom -->
+      <!-- Coordonnées rapides -->
+      <div class="text-sm text-gray-600 space-y-1">
+        <p>📧 <a href="mailto:montatairebb@gmail.com" class="text-primary font-medium hover:underline">montatairebb@gmail.com</a></p>
+        <p>📍 Complexe Sportif Marcel Coene, 60160 Montataire</p>
+      </div>
+
+      <!-- Formulaire -->
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-5">
         <div>
-          <label for="nom" class="block text-sm font-semibold mb-1">Nom :</label>
-          <input type="text" id="nom" name="nom" required class="w-full border border-gray-300 rounded px-4 py-2" />
+          <label for="nom" class="block text-sm font-semibold mb-1">Nom <span class="text-secondary">*</span></label>
+          <input type="text" id="nom" name="nom" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary" />
         </div>
 
-        <!-- Email -->
         <div>
-          <label for="email" class="block text-sm font-semibold mb-1">Adresse email :</label>
-          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2" />
+          <label for="email" class="block text-sm font-semibold mb-1">Adresse email <span class="text-secondary">*</span></label>
+          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary" />
         </div>
 
-        <!-- Raison -->
         <div>
-          <label for="raison" class="block text-sm font-semibold mb-1">Raison du message :</label>
-          <select name="raison" id="raison" required class="w-full border border-gray-300 rounded px-4 py-2">
+          <label for="raison" class="block text-sm font-semibold mb-1">Raison du message <span class="text-secondary">*</span></label>
+          <select name="raison" id="raison" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
             <option value="" disabled selected>-- Choisir une raison --</option>
             <option value="partenariat">Demande de partenariat</option>
             <option value="bénévolat">Proposition de bénévolat</option>
@@ -64,20 +76,21 @@
           </select>
         </div>
 
-        <!-- Message -->
         <div>
-          <label for="message" class="block text-sm font-semibold mb-1">Message :</label>
-          <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+          <label for="message" class="block text-sm font-semibold mb-1">Message <span class="text-secondary">*</span></label>
+          <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
         </div>
 
-        <!-- Bouton -->
-        <div class="text-center">
-          <button type="submit" class="bg-secondary text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">Envoyer</button>
+        <div class="text-center pt-2">
+          <button type="submit" class="bg-secondary hover:bg-red-600 text-white font-semibold px-8 py-3 rounded-full transition transform hover:scale-105">
+            Envoyer le message
+          </button>
         </div>
       </form>
     </section>
   </main>
 
+  <!-- Footer + JS -->
   <script src="js/footer.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/animations.js" defer></script>

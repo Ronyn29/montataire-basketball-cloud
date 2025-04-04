@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin - Montataire Basketball</title>
-  <!-- Solution 1 : Chargement depuis CDN -->
-  <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
-  
-  <!-- Solution 2 : Fallback local -->
-  <script>
-    window.CMS_MANUAL_INIT = true;
-    function initCMS() {
-      if (typeof CMS !== 'undefined') {
-        CMS.init();
-        console.log('CMS initialisé avec succès');
-      } else {
-        console.error('Échec du chargement du CMS');
-        // Fallback ultime
-        const script = document.createElement('script');
-        script.src = '/netlify-cms.js';
-        script.onload = () => CMS.init();
-        document.body.appendChild(script);
-      }
-    }
-  </script>
+  <title>CMS Admin</title>
+  <!-- Solution ultime : Chargement LOCAL -->
+  <script src="/netlify-cms.js"></script>
 </head>
 <body>
-  <!-- Conteneur ABSOLUMENT REQUIS -->
+  <!-- Conteneur ABSOLUMENT NECESSAIRE -->
   <div id="nc-root"></div>
 
   <script>
-    // Initialisation différée
-    document.addEventListener('DOMContentLoaded', initCMS);
+    // Initialisation ultra-sécurisée
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.CMS) {
+        console.log('CMS prêt à initialiser');
+        CMS.init();
+      } else {
+        console.error('CMS non détecté après 5s');
+        // Rechargement forcé
+        setTimeout(() => location.reload(true), 5000);
+      }
+    });
   </script>
 </body>
 </html>
