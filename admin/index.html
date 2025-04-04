@@ -4,22 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CMS Admin</title>
-  <!-- Chargement synchrone du CMS -->
+  <!-- Chargement SYNCHRONE du CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
 </head>
 <body>
-  <!-- Point d'ancrage pour le CMS -->
+  <!-- Conteneur REQUIS pour le CMS -->
   <div id="nc-root"></div>
-  
+
   <script>
-    // Initialisation différée pour être sûr que le DOM est prêt
-    document.addEventListener('DOMContentLoaded', function() {
-      if (typeof CMS !== 'undefined') {
-        CMS.init();
-      } else {
-        console.error('Netlify CMS non chargé');
-      }
-    });
+    // Vérification que le CMS est bien chargé
+    if (typeof CMS !== 'undefined') {
+      CMS.init();
+      console.log('Netlify CMS initialisé avec succès');
+    } else {
+      console.error('Erreur: Netlify CMS non chargé');
+      // Solution de secours
+      const fallbackScript = document.createElement('script');
+      fallbackScript.src = 'https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js';
+      fallbackScript.onload = () => CMS.init();
+      document.body.appendChild(fallbackScript);
+    }
   </script>
 </body>
 </html>
