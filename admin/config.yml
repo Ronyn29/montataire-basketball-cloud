@@ -1,18 +1,20 @@
 backend:
-  name: github
-  repo: Ronyn29/montataire-basket
+  name: git-gateway
   branch: main
-  auth_type: implicit
-  app_id: Ov23lieugwh9HIKQ7ZRu
-  base_url: https://montatairebasketball.netlify.app
+  commit_messages:
+    create: "Création {{collection}} «{{slug}}»"
+    update: "Mise à jour {{collection}} «{{slug}}»"
+    delete: "Suppression {{collection}} «{{slug}}»"
+    uploadMedia: "Upload de média «{{path}}»"
+    deleteMedia: "Suppression de média «{{path}}»"
 
-media_folder: "images/uploads"
+media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: actualites
+  - name: "actualites"
     label: "Actualités"
-    folder: content/actualites
+    folder: "content/actualites"
     create: true
     slug: "{{slug}}"
     fields:
