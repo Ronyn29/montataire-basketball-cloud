@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: Ronyn29/montataire-basket
+  branch: main
+  auth_type: implicit
+  app_id: Ov23lieugwh9HIKQ7ZRu
+  base_url: https://montatairebasketball.netlify.app
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: actualites
+    label: "Actualités"
+    folder: content/actualites
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Contenu", name: "body", widget: "markdown" }

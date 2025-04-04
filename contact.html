@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Contactez le Montataire Basket-ball pour toute question, proposition ou demande de partenariat.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-3xl mx-auto px-4 py-16" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-8">Contactez-nous</h1>
+
+    <section class="bg-gray-100 p-6 rounded-xl shadow space-y-6">
+      <p class="text-gray-700">Remplissez le formulaire ci-dessous pour nous envoyer un message. Nous vous répondrons dans les plus brefs délais.</p>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+        <!-- Nom -->
+        <div>
+          <label for="nom" class="block text-sm font-semibold mb-1">Nom :</label>
+          <input type="text" id="nom" name="nom" required class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-sm font-semibold mb-1">Adresse email :</label>
+          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+
+        <!-- Raison -->
+        <div>
+          <label for="raison" class="block text-sm font-semibold mb-1">Raison du message :</label>
+          <select name="raison" id="raison" required class="w-full border border-gray-300 rounded px-4 py-2">
+            <option value="" disabled selected>-- Choisir une raison --</option>
+            <option value="partenariat">Demande de partenariat</option>
+            <option value="bénévolat">Proposition de bénévolat</option>
+            <option value="question">Autre question</option>
+          </select>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-sm font-semibold mb-1">Message :</label>
+          <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+        </div>
+
+        <!-- Bouton -->
+        <div class="text-center">
+          <button type="submit" class="bg-secondary text-white px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">Envoyer</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

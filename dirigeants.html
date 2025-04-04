@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Équipe encadrante - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Découvrez l'équipe encadrante du Montataire Basket-ball : dirigeants, entraîneurs, bénévoles et référents du club.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-5xl mx-auto px-4 py-16 space-y-16" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-8">Équipe encadrante</h1>
+
+    <!-- Bureau -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-6">Membres du bureau</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-primary">Jean Dupont</h3>
+          <p class="text-sm text-gray-700">Président</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-primary">Sarah Lebrun</h3>
+          <p class="text-sm text-gray-700">Trésorière</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-primary">Michel Morel</h3>
+          <p class="text-sm text-gray-700">Secrétaire</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff technique -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-6">Staff technique</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-primary">Karim Benaïssa</h3>
+          <p class="text-sm text-gray-700">Responsable technique / Coach U18</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-primary">Élodie Marchand</h3>
+          <p class="text-sm text-gray-700">Coach U11 & U13</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-xl shadow">
+          <h3 class="font-bold text-primary">Kevin Rolland</h3>
+          <p class="text-sm text-gray-700">Coach Seniors</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Référents & bénévoles -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-6">Référents et bénévoles</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Logistique & Matériel : Nadia Fernandez</li>
+        <li>Responsable buvette : André De Sousa</li>
+        <li>Communication & Réseaux sociaux : Lina Gacem</li>
+        <li>Référent santé & sécurité : David Delaunay</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

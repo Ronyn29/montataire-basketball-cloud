@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Équipe Loisirs - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Découvrez notre section loisirs : basketball pour adultes, dans une ambiance conviviale, sans compétition.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-4xl mx-auto px-4 py-16 space-y-12" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-8">Équipe Loisirs</h1>
+
+    <!-- Présentation -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow text-gray-700 space-y-4">
+      <p>La section loisirs du Montataire Basket-ball s’adresse aux adultes souhaitant pratiquer le basket sans pression de compétition, dans une ambiance détendue et bienveillante.</p>
+      <p>Ouverte à tous et toutes, quel que soit le niveau ou l'expérience, cette section permet de garder la forme, partager de bons moments, et retrouver le plaisir du jeu collectif.</p>
+    </section>
+
+    <!-- Infos pratiques -->
+    <section class="bg-white border border-gray-200 p-6 rounded-xl shadow space-y-2">
+      <h2 class="text-xl font-bold text-secondary mb-3">📅 Infos pratiques</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li><strong>Public :</strong> Adultes (hommes & femmes)</li>
+        <li><strong>Compétition :</strong> Aucune – pratique loisirs uniquement</li>
+        <li><strong>Jour :</strong> Mercredi soir</li>
+        <li><strong>Horaire :</strong> 20h00 à 22h00</li>
+        <li><strong>Lieu :</strong> Salle  Marcel Coene, Montataire</li>
+      </ul>
+    </section>
+
+    <!-- Call to action -->
+    <section class="text-center">
+      <a href="contact.html" class="mt-6 inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition">Rejoindre la section loisirs</a>
+    </section>
+  </main>

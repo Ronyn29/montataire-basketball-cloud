@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan du site - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-4xl mx-auto px-4 py-16" data-animate>
+    <h1 class="text-3xl font-bold mb-6 text-primary">Plan du site</h1>
+    <ul class="list-disc ml-6 space-y-2 text-gray-800">
+      <li><a href="index.html" class="text-secondary hover:underline">Accueil</a></li>
+      <li><a href="histoire.html" class="text-secondary hover:underline">Histoire du club</a></li>
+      <li><a href="equipes-seniors.html" class="text-secondary hover:underline">Équipes</a></li>
+      <li><a href="contact.html" class="text-secondary hover:underline">Contact</a></li>
+      <li><a href="mentions-legales.html" class="text-secondary hover:underline">Mentions légales</a></li>
+      <li><a href="confidentialite.html" class="text-secondary hover:underline">Politique de confidentialité</a></li>
+      <li><a href="cgu.html" class="text-secondary hover:underline">Conditions d’utilisation</a></li>
+    </ul>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

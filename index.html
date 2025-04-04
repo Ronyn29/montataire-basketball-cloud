@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Montataire Basket-ball</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3A77D5',
+              secondary: '#EA230F'
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(1rem)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' }
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-out forwards'
+            }
+          }
+        }
+      };
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/28b8d733b1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+  </head>
+
+  <body class="bg-white text-black">
+
+    <!-- HEADER -->
+    <script src="js/header.js" defer></script>
+
+    <!-- HERO -->
+    <section class="relative h-[80vh] min-h-[500px] bg-primary bg-cover bg-center flex items-center" style="background-image: url('images/hero-bg.jpg');">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="container mx-auto px-6 relative z-10 text-center text-white" data-animate>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Montataire Basket-ball</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Club familial, compétitif & passionné depuis plus de 30 ans.</p>
+        <a href="contact.html" class="inline-block bg-secondary hover:bg-red-600 text-white font-medium py-3 px-8 rounded-full transition transform hover:scale-105">Nous contacter</a>
+      </div>
+    </section>
+
+   <!-- PRÉSENTATION CLUB AMÉLIORÉE -->
+<section class="py-20 bg-white" data-animate>
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texte -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Qui sommes-nous ?</h2>
+      <p class="text-gray-700 text-lg leading-relaxed mb-4">
+        Le <strong>Montataire Basket-ball</strong> est un club dynamique situé dans l’Oise, 
+        ouvert à tous les âges et niveaux. Nous proposons des sections 
+        <strong>jeunes, loisirs et compétitions</strong>, encadrées par des coachs passionnés.
+      </p>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Depuis plus de 30 ans, notre mission est de former les joueuses et joueurs à travers des 
+        valeurs fortes : <em>respect, engagement, esprit d’équipe</em>.
+      </p>
+    </div>
+
+    <!-- Image illustrative -->
+    <div class="relative">
+      <img src="images/team-action.jpg" alt="Équipe de Montataire en action" class="rounded-xl shadow-lg w-full object-cover" loading="lazy" />
+      <span class="absolute top-2 left-2 bg-secondary text-white text-xs px-3 py-1 rounded-full shadow">Depuis 1990</span>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ACTUALITÉS -->
+    <section class="py-16 bg-white" data-animate>
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12">Actualités du club</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-100 rounded-xl p-4 shadow hover:shadow-lg transition">
+            <h3 class="font-semibold text-secondary mb-2">🏀 Tournoi U13 - Résultats</h3>
+            <p class="text-sm text-gray-600">Nos jeunes ont brillé au tournoi régional à Beauvais. Bravo à toute l’équipe !</p>
+          </div>
+          <div class="bg-gray-100 rounded-xl p-4 shadow hover:shadow-lg transition">
+            <h3 class="font-semibold text-secondary mb-2">📢 Reprise des entraînements</h3>
+            <p class="text-sm text-gray-600">Les séances reprennent à partir du lundi 10 septembre. Planning à consulter en ligne.</p>
+          </div>
+          <div class="bg-gray-100 rounded-xl p-4 shadow hover:shadow-lg transition">
+            <h3 class="font-semibold text-secondary mb-2">🎉 Portes ouvertes 2025</h3>
+            <p class="text-sm text-gray-600">Venez découvrir le club et essayer gratuitement le basket ! Samedi 14h-17h au gymnase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- NOS VALEURS -->
+    <section class="py-16 bg-gray-50" data-animate>
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12">Nos valeurs</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="p-6 bg-white shadow rounded-xl">
+            <h3 class="text-xl font-semibold text-secondary mb-3">Esprit d’équipe</h3>
+            <p class="text-gray-600 text-sm">Chaque joueur compte. Ensemble, on va plus loin.</p>
+          </div>
+          <div class="p-6 bg-white shadow rounded-xl">
+            <h3 class="text-xl font-semibold text-secondary mb-3">Formation</h3>
+            <p class="text-gray-600 text-sm">Des entraînements adaptés à chaque niveau, pour progresser toute l’année.</p>
+          </div>
+          <div class="p-6 bg-white shadow rounded-xl">
+            <h3 class="text-xl font-semibold text-secondary mb-3">Passion</h3>
+            <p class="text-gray-600 text-sm">Du basket avant tout, avec le cœur et l’envie de se dépasser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CTA FINAL -->
+    <section class="py-20 bg-primary text-white text-center" data-animate>
+      <h2 class="text-3xl font-bold mb-4">Rejoins le Montataire Basket-ball</h2>
+      <p class="mb-6 text-lg">Une ambiance familiale, un encadrement sérieux, et la passion du jeu.</p>
+      <a href="inscription.html" class="bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Je m’inscris</a>
+    </section>
+
+    <!-- FOOTER -->
+    <script src="js/footer.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/animations.js" defer></script>
+
+
+
+  </body>
+</html>

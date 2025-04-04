@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Histoire - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-20" data-animate>
+
+    <!-- INTRO -->
+    <section class="text-center">
+      <h1 class="text-4xl font-bold text-primary mb-4">Notre Histoire</h1>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">Depuis sa création, Montataire Basket-ball ne cesse de grandir autour d'une passion commune : le basket. Retour sur les moments clés de notre aventure humaine et sportive.</p>
+    </section>
+
+    <!-- FRISE CHRONO -->
+    <section>
+      <h2 class="text-2xl font-semibold text-secondary mb-6">Moments marquants</h2>
+      <div class="border-l-4 border-primary pl-6 space-y-10">
+        <div>
+          <p class="text-sm text-gray-400">1991</p>
+          <h3 class="text-lg font-bold text-primary">Création du club</h3>
+          <p class="text-gray-600">Un petit groupe de passionnés décide de lancer une section basket à Montataire. L'aventure commence !</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">2005</p>
+          <h3 class="text-lg font-bold text-primary">Première montée en départemental 1</h3>
+          <p class="text-gray-600">L'équipe senior masculine réalise une saison exceptionnelle et grimpe au classement.</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">2018</p>
+          <h3 class="text-lg font-bold text-primary">Création de la section féminine</h3>
+          <p class="text-gray-600">Le club ouvre ses portes aux basketteuses, avec une volonté forte de mixité et d’égalité.</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-400">2024</p>
+          <h3 class="text-lg font-bold text-primary">Nouvelle identité visuelle</h3>
+          <p class="text-gray-600">Nouveau logo, nouveau site, nouvelle ambition pour les années à venir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIGURES DU CLUB -->
+    <section>
+      <h2 class="text-2xl font-semibold text-secondary mb-6">Ils ont marqué le club</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-gray-50 rounded-xl shadow-md">
+          <img src="images/coach1.jpg" alt="Coach 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+          <h3 class="text-lg font-bold">Jean-Luc Martin</h3>
+          <p class="text-gray-600 text-sm">Président fondateur (1991–2005), visionnaire et passionné.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl shadow-md">
+          <img src="images/joueuse1.jpg" alt="Joueuse 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+          <h3 class="text-lg font-bold">Sophie Leroy</h3>
+          <p class="text-gray-600 text-sm">Première capitaine féminine du club, modèle d'engagement.</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-xl shadow-md">
+          <img src="images/benevole1.jpg" alt="Bénévole 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+          <h3 class="text-lg font-bold">Mustapha El Hadji</h3>
+          <p class="text-gray-600 text-sm">Bénévole emblématique, toujours présent les jours de match.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

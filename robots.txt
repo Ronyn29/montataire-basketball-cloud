@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://montatairebasketball.netlify.app/sitemap.xml

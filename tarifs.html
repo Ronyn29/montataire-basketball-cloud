@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotisations & Inscriptions - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Tarifs et modalités d'inscription au Montataire Basket-ball. Découvrez les cotisations selon les catégories d'âge et les documents nécessaires.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-4xl mx-auto px-4 py-16 space-y-12" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-8">Cotisations & Inscriptions</h1>
+
+    <!-- Tarifs par catégorie -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Tarifs saison 2024–2025</h2>
+      <table class="w-full text-left border border-gray-300 rounded overflow-hidden shadow text-sm">
+        <thead class="bg-primary text-white">
+          <tr>
+            <th class="p-3">Catégorie</th>
+            <th class="p-3">Âge</th>
+            <th class="p-3">Tarif</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <tr>
+            <td class="p-3">Baby Basket (U7)</td>
+            <td class="p-3">4–6 ans</td>
+            <td class="p-3">60 €</td>
+          </tr>
+          <tr>
+            <td class="p-3">Mini Basket (U9 à U11)</td>
+            <td class="p-3">7–10 ans</td>
+            <td class="p-3">75 €</td>
+          </tr>
+          <tr>
+            <td class="p-3">Jeunes (U13 à U18)</td>
+            <td class="p-3">11–17 ans</td>
+            <td class="p-3">90 €</td>
+          </tr>
+          <tr>
+            <td class="p-3">Seniors</td>
+            <td class="p-3">18 ans et +</td>
+            <td class="p-3">110 €</td>
+          </tr>
+          <tr>
+            <td class="p-3">Loisirs</td>
+            <td class="p-3">Adultes</td>
+            <td class="p-3">80 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Documents à fournir -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Pièces à fournir</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Formulaire d’inscription rempli et signé (fourni par le club)</li>
+        <li>Certificat médical de non contre-indication (si requis)</li>
+        <li>Photo d'identité</li>
+        <li>Paiement de la cotisation (chèque ou espèces)</li>
+      </ul>
+    </section>
+
+    <!-- Réductions & infos -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Réductions possibles</h2>
+      <p class="text-gray-700">
+        Des réductions peuvent être appliquées pour les fratries ou les bénéficiaires du Pass'Sport ou Pass Jeunes.  
+        N'hésitez pas à nous contacter pour plus d'informations.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Nous contacter</h2>
+      <p class="text-gray-700">
+        Email : <a href="mailto:montatairebb@gmail.com" class="text-secondary">montatairebb@gmail.com</a><br>
+        Téléphone : 06 00 00 00 00<br>
+        Ou via notre <a href="contact.html" class="text-secondary underline hover:text-red-600">page de contact</a>.
+      </p>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

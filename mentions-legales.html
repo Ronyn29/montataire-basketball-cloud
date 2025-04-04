@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-4xl mx-auto px-4 py-16" data-animate>
+    <h1 class="text-3xl font-bold mb-6 text-primary">Mentions légales</h1>
+    <p class="mb-4">Conformément aux articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004, nous informons les utilisateurs du site <strong>montataire-basket.fr</strong> des éléments suivants :</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-2 text-secondary">Éditeur</h2>
+    <p>Association Montataire Basket-ball<br />
+    SIRET : 39308698800028<br />
+    Complexe Sportif Marcel Coene, 60160 Montataire<br />
+    Email : <a href="mailto:montatairebb@gmail.com" class="text-secondary">montatairebb@gmail.com</a></p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-2 text-secondary">Hébergement</h2>
+    <p>Ce site est hébergé par : [Nom de l’hébergeur] - [Adresse] - [Téléphone]</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-2 text-secondary">Responsabilité</h2>
+    <p>Le club décline toute responsabilité en cas d’inexactitude ou de modification des informations diffusées sur ce site. Le contenu est fourni à titre informatif uniquement.</p>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

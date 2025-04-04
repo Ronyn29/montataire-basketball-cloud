@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Équipes Jeunes - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Présentation des équipes jeunes du Montataire Basket-ball. Découvrez nos catégories de jeunes joueurs et joueuses et accédez aux informations officielles via la FFBB.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-16" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-6">Équipes Jeunes</h1>
+
+    <!-- Info FFBB -->
+    <section class="bg-blue-50 border-l-4 border-primary p-4 rounded-md shadow text-sm text-gray-700 max-w-3xl mx-auto">
+      📌 Les informations détaillées sur les équipes en compétition sont disponibles sur le site officiel de la FFBB.
+    </section>
+
+    <!-- U7 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">U7 - Baby Basket</h2>
+      <p class="text-gray-700">Âge : 3 à 5 ans</p>
+      <p class="text-gray-700">Initiation ludique au basketball pour les tout-petits, filles et garçons. Pas de compétition officielle.</p>
+    </section>
+
+    <!-- U9 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">U9 - Mini-poussins, mini-poussines</h2>
+      <p class="text-gray-700">Âge : 6 à 7 ans</p>
+      <p class="text-gray-700">Apprentissage des bases dans un environnement amusant. Pas de compétition officielle.</p>
+    </section>
+
+    <!-- U11 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">U11 - Poussins, poussines</h2>
+      <p class="text-gray-700">Âge : 8 à 9 ans</p>
+      <p class="text-gray-700">Développement des compétences fondamentales et introduction aux matchs officiels.</p>
+      <a href="https://resultats.ffbb.com/organisation/825.html" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- U13 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">U13 - Benjamins, benjamines</h2>
+      <p class="text-gray-700">Âge : 10 à 11 ans</p>
+      <p class="text-gray-700">Perfectionnement des techniques individuelles et collectives en match.</p>
+      <a href="https://resultats.ffbb.com/organisation/825.html" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- U15 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">U15 - Minimes, minimes féminines</h2>
+      <p class="text-gray-700">Âge : 12 à 13 ans</p>
+      <p class="text-gray-700">Approfondissement des stratégies de jeu et participation aux championnats jeunes.</p>
+      <a href="https://resultats.ffbb.com/organisation/825.html" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- U17 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">U17 - Cadets, cadettes</h2>
+      <p class="text-gray-700">Âge : 14 à 15 ans</p>
+      <p class="text-gray-700">Maîtrise avancée des compétences collectives et individuelles.</p>
+      <a href="https://resultats.ffbb.com/organisation/825.html" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- U18 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">U18 - Juniors féminines</h2>
+      <p class="text-gray-700">Âge : 16 à 17 ans</p>
+      <p class="text-gray-700">Équipe féminine engagée en compétition régionale. Travail technique et collectif pour la performance et la progression.</p>
+      <a href="https://resultats.ffbb.com/organisation/825.html" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center">
+      <a href="contact.html" class="mt-10 inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition">Rejoindre une équipe</a>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

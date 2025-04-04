@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entraînements & Matchs - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Planning des entraînements et matchs du Montataire Basket-ball : jours, horaires, équipes et lieux des séances.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-16" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-8">Entraînements & Matchs</h1>
+
+    <!-- Entraînements -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-6">Planning des entraînements</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left border border-gray-300 rounded-lg shadow">
+          <thead class="bg-primary text-white">
+            <tr>
+              <th class="p-3">Équipe</th>
+              <th class="p-3">Jour</th>
+              <th class="p-3">Horaire</th>
+              <th class="p-3">Lieu</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr>
+              <td class="p-3">U7</td>
+              <td class="p-3">Mercredi</td>
+              <td class="p-3">14h00 – 15h00</td>
+              <td class="p-3">Marcel Coene</td>
+            </tr>
+            <tr>
+              <td class="p-3">U11</td>
+              <td class="p-3">Lundi</td>
+              <td class="p-3">17h30 – 19h00</td>
+              <td class="p-3">Salle Marcel Coene</td>
+            </tr>
+            <tr>
+              <td class="p-3">U13</td>
+              <td class="p-3">Mercredi</td>
+              <td class="p-3">15h00 – 16h30</td>
+              <td class="p-3">Salle Marcel Coene</td>
+            </tr>
+            <tr>
+              <td class="p-3">Seniors</td>
+              <td class="p-3">Lundi & Jeudi</td>
+              <td class="p-3">20h00 – 22h00</td>
+              <td class="p-3">Salle Marcel Coene </td>
+            </tr>
+            <tr>
+              <td class="p-3">Loisirs</td>
+              <td class="p-3">Mercredi</td>
+              <td class="p-3">20h00 – 22h00</td>
+              <td class="p-3">Salle Marcel Coene</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Matchs -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-6">Matchs à venir</h2>
+      <ul class="space-y-4 text-gray-700">
+        <li>🗓️ Samedi 12 avril - <strong>U13</strong> vs Clermont - 15h00 - Domicile</li>
+        <li>🗓️ Dimanche 13 avril - <strong>Seniors</strong> vs Beauvais - 17h00 - Extérieur</li>
+        <li>🗓️ Samedi 19 avril - <strong>U11</strong> vs Nogent - 14h00 - Domicile</li>
+        <li>🗓️ Dimanche 20 avril - <strong>Seniors</strong> vs Montdidier - 18h00 - Domicile</li>
+      </ul>
+      <p class="mt-4 text-sm text-gray-500">📌 Mise à jour chaque semaine sur nos réseaux sociaux ou par affichage au gymnase.</p>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

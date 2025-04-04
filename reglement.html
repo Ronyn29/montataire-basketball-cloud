@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fonctionnement & Règlement - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Découvrez le règlement intérieur et le fonctionnement du Montataire Basket-ball : engagements, respect, discipline, valeurs éducatives et sportives.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-4xl mx-auto px-4 py-16 space-y-12" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-8">Fonctionnement & Règlement</h1>
+
+    <!-- Engagement joueur -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Engagement des joueurs</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Respecter les horaires des entraînements et matchs.</li>
+        <li>Avoir une attitude positive et respectueuse envers les coachs, arbitres, coéquipiers et adversaires.</li>
+        <li>Prévenir en cas d'absence prolongée ou blessure.</li>
+        <li>Être à jour dans les cotisations pour être autorisé à jouer.</li>
+      </ul>
+    </section>
+
+    <!-- Engagement parents -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Engagement des parents</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Encourager les enfants de façon bienveillante, sans critiquer arbitres ou entraîneurs.</li>
+        <li>Accompagner les enfants aux matchs ou organiser un covoiturage.</li>
+        <li>Respecter le staff bénévole et participer à la vie du club (événements, buvette, etc.).</li>
+      </ul>
+    </section>
+
+    <!-- Engagement du club -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Engagement du club</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Proposer un cadre sécurisé et structurant pour tous les licenciés.</li>
+        <li>Favoriser l’apprentissage, la progression, et le plaisir de jouer.</li>
+        <li>Encadrer les séances avec des coachs formés et investis.</li>
+        <li>Être à l’écoute des familles et des licenciés.</li>
+      </ul>
+    </section>
+
+    <!-- Respect & discipline -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Respect & discipline</h2>
+      <p class="text-gray-700">
+        Tout comportement inadapté (violence, insultes, tricherie...) pourra faire l’objet d’un avertissement ou d’une exclusion temporaire ou définitive du club.
+        Le respect est une valeur centrale à Montataire Basket-ball.
+      </p>
+    </section>
+
+    <!-- Règlement PDF -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Téléchargement du règlement</h2>
+      <p class="text-gray-700">Vous pouvez consulter ou télécharger notre règlement complet au format PDF :</p>
+      <a href="documents/reglement-interieur.pdf" class="inline-block mt-3 bg-secondary text-white px-6 py-2 rounded hover:bg-red-700 transition" target="_blank" rel="noopener">
+        Télécharger le règlement
+      </a>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

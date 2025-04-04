@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>École d’arbitrage - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Tout savoir sur l'école d'arbitrage du Montataire Basket-ball : formation, encadrement, certification, jeunes arbitres du club.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-4xl mx-auto px-4 py-16 space-y-12" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-8">École d’arbitrage</h1>
+
+    <!-- Intro -->
+    <section>
+      <p class="text-gray-700 text-lg">
+        L’école d’arbitrage de Montataire Basket-ball a pour objectif de former les jeunes à l’arbitrage, à la table de marque, et aux règles du jeu.
+        C’est une étape essentielle pour comprendre le basket dans sa globalité et développer un esprit de responsabilité.
+      </p>
+    </section>
+
+    <!-- Objectifs -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Objectifs pédagogiques</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Former des arbitres licenciés et reconnus par la FFBB</li>
+        <li>Développer la connaissance des règles</li>
+        <li>Sensibiliser les jeunes au rôle d’arbitre et à la gestion d’un match</li>
+        <li>Responsabiliser les joueurs dans leur comportement</li>
+      </ul>
+    </section>
+
+    <!-- Pour qui ? -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">À qui s’adresse l’école ?</h2>
+      <p class="text-gray-700">
+        Elle est ouverte aux jeunes joueurs à partir de 13 ans motivés pour apprendre à arbitrer et encadrer des rencontres.
+        Aucune expérience n’est requise, seulement de la motivation et de l’assiduité.
+      </p>
+    </section>
+
+    <!-- Contenu -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Contenu de la formation</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Formation théorique : règles, sanctions, gestes</li>
+        <li>Mises en situation sur de vrais matchs jeunes</li>
+        <li>Accompagnement par un référent arbitrage</li>
+        <li>Suivi pour obtenir une validation officielle FFBB</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2 class="text-xl font-semibold text-secondary mb-4">Intéressé(e) ?</h2>
+      <p class="text-gray-700">
+        Contacte notre référent arbitrage à l’adresse : <a href="mailto:montatairebb@gmail.com" class="text-secondary">montatairebb@gmail.com</a> ou passe nous voir lors d’un entraînement.
+      </p>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

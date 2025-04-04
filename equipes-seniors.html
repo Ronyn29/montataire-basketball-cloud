@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Équipes Seniors - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Présentation des équipes seniors du Montataire Basket-ball. Accédez aux résultats, calendriers et classements officiels via la FFBB.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-16" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-6">Équipes Seniors</h1>
+
+    <!-- Info FFBB -->
+    <section class="bg-blue-50 border-l-4 border-primary p-4 rounded-md shadow text-sm text-gray-700 max-w-3xl mx-auto">
+      📌 Les calendriers, classements et résultats sont disponibles en temps réel sur le site officiel de la FFBB.  
+      <br>➡️ Cliquez sur les boutons de chaque équipe pour accéder à leur fiche officielle.
+    </section>
+
+    <!-- SM1 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">Seniors Masculins 1</h2>
+      <p class="text-gray-700">🏀 Division : Pré-Région (Départementale 1)</p>
+      <a href="https://competitions.ffbb.com/ligues/hdf/comites/0060/clubs/hdf0060021" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- SM2 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">Seniors Masculins 2</h2>
+      <p class="text-gray-700">🏀 Division : Départementale 2</p>
+      <a href="https://competitions.ffbb.com/ligues/hdf/comites/0060/clubs/hdf0060021" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- SM3 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">Seniors Masculins 3</h2>
+      <p class="text-gray-700">🏀 Division : Départementale 4</p>
+      <a href="https://competitions.ffbb.com/ligues/hdf/comites/0060/clubs/hdf0060021" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- SF1 -->
+    <section class="bg-gray-100 p-6 rounded-xl shadow">
+      <h2 class="text-2xl font-bold text-secondary mb-2">Seniors Féminines 1</h2>
+      <p class="text-gray-700">🏀 Division : Pré-Régionale Féminine</p>
+      <a href="https://competitions.ffbb.com/ligues/hdf/comites/0060/clubs/hdf0060021" target="_blank" class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition">🔗 Voir sur FFBB</a>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center">
+      <a href="contact.html" class="mt-10 inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition">Rejoindre une équipe</a>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

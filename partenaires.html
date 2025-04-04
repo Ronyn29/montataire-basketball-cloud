@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partenaires - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Découvrez les partenaires qui soutiennent le Montataire Basket-ball et contribuent à son développement.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-16" data-animate>
+    <h1 class="text-3xl font-bold text-primary text-center mb-6">Nos partenaires</h1>
+
+    <!-- Introduction -->
+    <section class="text-gray-700 text-center max-w-3xl mx-auto">
+      <p class="mb-4">Le Montataire Basket-ball remercie chaleureusement ses partenaires pour leur confiance et leur engagement à nos côtés.</p>
+      <p>Grâce à leur soutien, le club peut continuer à se développer, à encadrer les jeunes, à organiser des événements et à faire rayonner nos valeurs sur le terrain et en dehors.</p>
+    </section>
+
+    <!-- Partenaires officiels -->
+    <section>
+      <h2 class="text-2xl font-bold text-secondary mb-6 text-center">🏆 Partenaires officiels</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Exemple de partenaire -->
+        <div class="bg-gray-100 p-4 rounded-xl shadow text-center">
+          <img src="images/partenaire1.png" alt="Logo Partenaire 1" class="h-20 mx-auto mb-4 object-contain" />
+          <h3 class="font-semibold mb-2">Nom du Partenaire</h3>
+          <p class="text-sm text-gray-600 mb-3">Description rapide du partenaire et de son soutien au club.</p>
+          <a href="https://sitepartenaire.com" target="_blank" class="text-primary font-medium hover:underline">Visiter le site</a>
+        </div>
+
+        <!-- Copie ce bloc pour chaque partenaire -->
+      </div>
+    </section>
+
+    <!-- Partenaires locaux -->
+    <section>
+      <h2 class="text-2xl font-bold text-secondary mt-16 mb-6 text-center">🤝 Partenaires locaux</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Bloc à dupliquer -->
+        <div class="bg-gray-100 p-4 rounded-xl shadow text-center">
+          <img src="images/partenaire2.png" alt="Logo Partenaire Local" class="h-20 mx-auto mb-4 object-contain" />
+          <h3 class="font-semibold mb-2">Nom du Commerçant</h3>
+          <p class="text-sm text-gray-600 mb-3">Merci pour le soutien apporté à nos événements et équipes.</p>
+          <a href="#" class="text-primary font-medium hover:underline">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA devenir partenaire -->
+    <section class="text-center mt-20">
+      <h2 class="text-xl font-semibold text-gray-800 mb-4">Vous souhaitez devenir partenaire du club ?</h2>
+      <a href="contact.html" class="inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition">Contactez-nous</a>
+    </section>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

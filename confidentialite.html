@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-4xl mx-auto px-4 py-16" data-animate>
+    <h1 class="text-3xl font-bold mb-6 text-primary">Politique de confidentialité</h1>
+    <p class="mb-4">Nous respectons la vie privée des visiteurs de notre site et nous nous engageons à protéger leurs données personnelles.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-2 text-secondary">Collecte des données</h2>
+    <p>Les données sont collectées uniquement avec votre consentement (formulaires, inscriptions, contact...).</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-2 text-secondary">Utilisation</h2>
+    <p>Les données sont utilisées uniquement pour vous contacter ou gérer les adhésions. Aucune donnée n'est vendue ni partagée.</p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-2 text-secondary">Droits des utilisateurs</h2>
+    <p>Vous pouvez demander l'accès, la modification ou la suppression de vos données en écrivant à : <a href="mailto:montatairebb@gmail.com" class="text-secondary">montatairebb@gmail.com</a></p>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>

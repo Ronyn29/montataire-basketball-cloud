@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vie du Club - Montataire Basket-ball</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <meta name="description" content="Découvrez toute la vie du club Montataire Basket-ball : règlements, tarifs, planning des entraînements, équipe encadrante, partenaires et école d'arbitrage.">
+</head>
+
+<body class="bg-white text-black">
+  <script src="js/header.js" defer></script>
+
+  <main class="max-w-6xl mx-auto px-4 py-16" data-animate>
+    <h1 class="text-4xl font-bold text-primary text-center mb-12">Vie du Club</h1>
+    <p class="text-center text-gray-700 mb-16 max-w-3xl mx-auto">
+      Tout ce qu’il faut savoir sur le club : inscriptions, fonctionnement, équipes encadrantes, planning des entraînements et plus encore.
+    </p>
+
+    <!-- Grid de liens -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Règlement -->
+      <a href="reglement.html" class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-bold text-primary mb-2">Fonctionnement & Règlement</h2>
+        <p class="text-gray-600 text-sm">Découvrez nos règles de vie, le cadre éducatif et sportif du club.</p>
+      </a>
+
+      <!-- Tarifs -->
+      <a href="tarifs.html" class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-bold text-primary mb-2">Cotisations & Inscriptions</h2>
+        <p class="text-gray-600 text-sm">Toutes les informations sur les frais d’adhésion et les modalités d’inscription.</p>
+      </a>
+
+      <!-- Partenaires -->
+      <a href="partenaires.html" class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-bold text-primary mb-2">Nos Partenaires</h2>
+        <p class="text-gray-600 text-sm">Merci à celles et ceux qui soutiennent le club toute l’année.</p>
+      </a>
+
+      <!-- Dirigeants -->
+      <a href="dirigeants.html" class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-bold text-primary mb-2">Équipe encadrante</h2>
+        <p class="text-gray-600 text-sm">Découvrez qui sont les bénévoles, coachs et membres du bureau.</p>
+      </a>
+
+      <!-- Planning -->
+      <a href="planning.html" class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-bold text-primary mb-2">Entraînements & Matchs</h2>
+        <p class="text-gray-600 text-sm">Horaires des entraînements, lieux, matchs officiels et événements à venir.</p>
+      </a>
+
+      <!-- Arbitrage -->
+      <a href="arbitrage.html" class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h2 class="text-xl font-bold text-primary mb-2">École d’arbitrage</h2>
+        <p class="text-gray-600 text-sm">Formation, sensibilisation et parcours pour devenir arbitre officiel.</p>
+      </a>
+
+    </div>
+  </main>
+
+  <script src="js/footer.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>
