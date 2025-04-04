@@ -1,14 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Montataire Basketball CMS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS Admin</title>
+  <!-- Chargement synchrone du CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
 </head>
 <body>
+  <!-- Point d'ancrage pour le CMS -->
+  <div id="nc-root"></div>
+  
   <script>
-    CMS.init();
+    // Initialisation différée pour être sûr que le DOM est prêt
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof CMS !== 'undefined') {
+        CMS.init();
+      } else {
+        console.error('Netlify CMS non chargé');
+      }
+    });
   </script>
 </body>
 </html>
