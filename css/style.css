@@ -8,9 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
-  font-family: 'Poppins', sans-serif; /* remplace Arial par une police moderne */
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #f7f7f7; /* arrière-plan plus doux */
+  background-color: #f7f7f7;
   color: #000000;
 }
 
@@ -50,6 +50,61 @@ body {
   font-size: 2rem;
   cursor: pointer;
   margin-left: 2rem;
+}
+
+/* Consentement cookies */
+.cookie-consent {
+  position: fixed;
+  bottom: 0;  /* Fixe la bannière en bas de l'écran */
+  left: 0;
+  right: 0;
+  background-color: #3A77D5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 9999;
+  display: none; /* Par défaut, la bannière est cachée */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-consent p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.cookie-consent a {
+  color: #EA230F;
+  text-decoration: underline;
+}
+
+.btn-accept, .btn-reject {
+  background-color: #EA230F;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-accept:hover, .btn-reject:hover {
+  background-color: #d41a07;
+  transform: scale(1.05);
+}
+
+.cookie-consent button {
+  margin: 0 10px; /* Sépare les boutons */
+}
+
+.cookie-consent button:first-child {
+  background-color: #2e62b8; /* Bouton Refuser avec couleur différente */
+}
+
+.cookie-consent button:first-child:hover {
+  background-color: #1d4876;
 }
 
 /* Hero section */
@@ -119,16 +174,20 @@ img {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #3A77D5;
+    background-color: #f0f0f0; /* Fond plus clair pour le menu */
     position: absolute;
-    top: 80px;
+    top: 80px; /* Décalage pour sous le header */
     right: 0;
     width: 100%;
     padding: 1rem;
+    border-top: 2px solid #3A77D5;  /* Séparation entre le menu et le header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
   }
+
   .nav-links.active {
     display: flex;
   }
+
   .burger {
     display: block;
   }
