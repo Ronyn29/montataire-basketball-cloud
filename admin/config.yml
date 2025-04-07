@@ -1,20 +1,14 @@
 backend:
   name: git-gateway
   branch: main
-  commit_messages:
-    create: "Création {{collection}} «{{slug}}»"
-    update: "Mise à jour {{collection}} «{{slug}}»"
-    delete: "Suppression {{collection}} «{{slug}}»"
-    uploadMedia: "Upload de média «{{path}}»"
-    deleteMedia: "Suppression de média «{{path}}»"
 
-media_folder: "static/images/uploads"
+media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
   - name: "actualites"
     label: "Actualités"
-    folder: "content/actualites"
+    folder: "actualites"
     create: true
     slug: "{{slug}}"
     fields:
