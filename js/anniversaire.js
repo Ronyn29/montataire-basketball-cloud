@@ -1,25 +1,28 @@
-
-// 🎉 Script pour afficher un message d'anniversaire
-const anniversaires = [
-  { prenom: "Léa", date: "04-30" },
-  { prenom: "Yanis", date: "05-01" },
-  { prenom: "Nora", date: "06-15" }
-];
+// 🎉 Script anniversaire TEST avec Léa (30 avril)
 
 function afficherAnniversaire() {
+  const anniversaires = [
+    { prenom: "Léa", date: "04-30" }, // TEST visible aujourd’hui
+    { prenom: "Yanis", date: "05-01" },
+  ];
+
   const today = new Date();
   const moisJour = today.toISOString().slice(5, 10); // "MM-DD"
 
-  const anniversaireDuJour = anniversaires.find(licencie => licencie.date === moisJour);
+  const anniversaire = anniversaires.find(p => p.date === moisJour);
 
-  if (anniversaireDuJour) {
+  if (anniversaire) {
     const message = document.createElement("div");
-    message.className = "fixed top-5 left-1/2 transform -translate-x-1/2 bg-yellow-200 text-black px-6 py-3 rounded-full shadow-lg animate-bounce z-50";
-    message.innerHTML = `🎉 Joyeux anniversaire <strong>${anniversaireDuJour.prenom}</strong> ! Toute l'équipe du Montataire Basket-ball te souhaite une superbe journée !`;
+    message.className = `
+      fixed top-4 left-1/2 transform -translate-x-1/2 
+      w-[95%] max-w-md text-center 
+      bg-yellow-200 text-black text-sm md:text-base 
+      px-4 py-3 rounded-full shadow-lg 
+      animate-bounce z-[9999]
+    `;
+    message.innerHTML = `🎉 Joyeux anniversaire <strong>${anniversaire.prenom}</strong> ! Toute l'équipe du Montataire Basket-ball te souhaite une superbe journée !`;
 
     document.body.appendChild(message);
-
-    // Retire le message au bout de 10 secondes
     setTimeout(() => message.remove(), 10000);
   }
 }
