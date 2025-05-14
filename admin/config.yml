@@ -2,6 +2,13 @@
 backend:
   name: git-gateway
   branch: main
+  login: true
+  repo: Ronyn29/montataire-basket
+  site_domain: montatairebasketball.netlify.app
+  identity_url: https://montatairebasketball.netlify.app/.netlify/identity
+
+display_url: https://montatairebasketball.netlify.app
+show_preview_links: false
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
