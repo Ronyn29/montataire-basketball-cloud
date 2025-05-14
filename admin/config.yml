@@ -1,17 +1,17 @@
 
 backend:
-  name: git-gateway
-  branch: main
-  login: true
+  name: github
   repo: Ronyn29/montataire-basket
-  site_domain: montatairebasketball.netlify.app
-  identity_url: https://montatairebasketball.netlify.app/.netlify/identity
-
-display_url: https://montatairebasketball.netlify.app
-show_preview_links: false
+  branch: main
+  auth_scope: repo
+  base_url: https://montatairebasketball.netlify.app
+  auth_endpoint: /api/auth
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
+
+display_url: https://montatairebasketball.netlify.app
+show_preview_links: false
 
 collections:
   - name: "actualites"
@@ -24,15 +24,15 @@ collections:
       - { label: "Contenu", name: "body", widget: "markdown" }
       - { label: "Date", name: "date", widget: "datetime" }
 
-  - name: "planning"
+  - name: "entrainements"
     label: "Planning Entraînements"
     files:
       - label: "Planning principal"
-        name: "planning"
+        name: "planning_data"
         file: "data/planning.json"
         fields:
           - label: "Entraînements"
-            name: "entraienements"
+            name: "entries"
             widget: "list"
             fields:
               - { label: "Équipe", name: "equipe", widget: "string" }
