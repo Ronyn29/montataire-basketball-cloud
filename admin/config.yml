@@ -19,11 +19,16 @@ collections:
 
   - name: "planning"
     label: "Planning Entraînements"
-    file: "data/planning.json"
-    fields:
-      - { label: "Entraînements", name: "entraienements", widget: "list", fields: [
-          { label: "Équipe", name: "equipe", widget: "string" },
-          { label: "Jour", name: "jour", widget: "string" },
-          { label: "Horaire", name: "horaire", widget: "string" },
-          { label: "Lieu", name: "lieu", widget: "string" }
-        ] }
+    files:
+      - label: "Planning principal"
+        name: "planning"
+        file: "data/planning.json"
+        fields:
+          - label: "Entraînements"
+            name: "entraienements"
+            widget: "list"
+            fields:
+              - { label: "Équipe", name: "equipe", widget: "string" }
+              - { label: "Jour", name: "jour", widget: "string" }
+              - { label: "Horaire", name: "horaire", widget: "string" }
+              - { label: "Lieu", name: "lieu", widget: "string" }
