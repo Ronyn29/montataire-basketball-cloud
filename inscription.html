@@ -48,8 +48,12 @@
 
   <!-- Formulaire -->
   <main class="max-w-3xl mx-auto px-4 py-16 space-y-10 animate-fade-in">
-    <form class="space-y-10 bg-gray-100 p-8 rounded-xl shadow-md">
-      
+    <form name="inscription" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact-success.html" class="space-y-10 bg-gray-100 p-8 rounded-xl shadow-md">
+      <input type="hidden" name="form-name" value="inscription">
+      <p class="hidden">
+        <label>Ne pas remplir : <input name="bot-field" /></label>
+      </p>
+
       <!-- Infos joueur -->
       <div>
         <h2 class="text-xl font-semibold text-secondary mb-4">🎯 Informations du joueur</h2>
@@ -101,5 +105,9 @@
   <script src="js/footer.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/cookies.js" defer></script>
+<script src="js/anniversaire.js" defer></script>
+
 </body>
 </html>

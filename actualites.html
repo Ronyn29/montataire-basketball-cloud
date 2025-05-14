@@ -30,6 +30,8 @@
     };
   </script>
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
 </head>
@@ -42,6 +44,32 @@
   <section class="py-16 bg-primary text-white text-center animate-fade-in" data-animate>
     <h1 class="text-4xl md:text-5xl font-bold mb-2">📰 Actualités du club</h1>
     <p class="text-lg md:text-xl text-white/90">Les dernières infos, résultats et événements du Montataire Basket-Ball</p>
+  </section>
+
+  <!-- Carrousel d'actus -->
+  <section class="py-12 bg-white animate-fade-in" data-animate>
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-gray-100 rounded-xl p-6 shadow">
+            <h3 class="text-secondary font-bold text-lg mb-2">📣 Nouvelle tenue officielle 2025</h3>
+            <p class="text-sm text-gray-700 mb-4">Merci à nos partenaires pour leur contribution.</p>
+            <a href="#" class="text-primary text-sm font-medium hover:underline">Lire plus</a>
+          </div>
+          <div class="swiper-slide bg-gray-100 rounded-xl p-6 shadow">
+            <h3 class="text-secondary font-bold text-lg mb-2">🏀 Résultats U13</h3>
+            <p class="text-sm text-gray-700 mb-4">Victoire à domicile ce week-end !</p>
+            <a href="#" class="text-primary text-sm font-medium hover:underline">Lire plus</a>
+          </div>
+          <div class="swiper-slide bg-gray-100 rounded-xl p-6 shadow">
+            <h3 class="text-secondary font-bold text-lg mb-2">🎉 Tournoi interquartiers</h3>
+            <p class="text-sm text-gray-700 mb-4">Un bel événement pour tous les âges.</p>
+            <a href="#" class="text-primary text-sm font-medium hover:underline">Lire plus</a>
+          </div>
+        </div>
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
   </section>
 
   <!-- Contenu principal -->
@@ -86,5 +114,29 @@
   <script src="js/footer.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/cookies.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      autoplay: {
+        delay: 5000
+      }
+    });
+  </script>
+
+<script src="js/anniversaire.js" defer></script>
+
 </body>
 </html>

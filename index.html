@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Site officiel du Montataire Basket-ball. Club familial et compétitif depuis plus de 30 ans. Rejoignez-nous !" />
+    <meta name="theme-color" content="#3A77D5" />
+    <link rel="canonical" href="https://montatairebasketball.netlify.app/" />
     <title>Montataire Basket-ball</title>
 
-    <!-- Tailwind -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'media',
         theme: {
           extend: {
             colors: {
@@ -36,113 +39,186 @@
     <!-- Styles & Favicon -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="images/logo.png" type="image/png" />
+
+    <!-- JSON-LD Schema.org (SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsOrganization",
+        "name": "Montataire Basket-ball",
+        "url": "https://montatairebasketball.netlify.app/",
+        "logo": "https://montatairebasketball.netlify.app/images/logo.png",
+        "sport": "Basketball",
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Fédération Française de BasketBall"
+        },
+        "sameAs": [
+          "https://www.facebook.com/MontataireBasketball",
+          "https://www.instagram.com/montatairebasketball"
+        ]
+      }
+    </script>
   </head>
 
   <body class="bg-white text-black">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-white text-black p-2 z-50">Aller au contenu principal</a>
 
     <!-- HEADER -->
     <script src="js/header.js" defer></script>
 
-    <!-- HERO -->
-    <section class="relative h-[80vh] min-h-[500px] bg-primary bg-cover bg-center flex items-center" style="background-image: url('images/hero-bg.jpg');">
-      <div class="absolute inset-0 bg-black/60"></div>
-      <div class="container mx-auto px-6 relative z-10 text-center text-white animate-fade-in" data-animate>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Montataire Basket-ball</h1>
-        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Club familial, compétitif & passionné depuis plus de 30 ans.</p>
-        <a href="contact.html" class="inline-block bg-secondary hover:bg-red-600 text-white font-medium py-3 px-8 rounded-full transition transform hover:scale-105">Nous contacter</a>
-      </div>
-    </section>
-
-    <!-- PRÉSENTATION CLUB -->
-    <section class="py-20 bg-white animate-fade-in" data-animate>
-      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        <!-- Texte -->
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Qui sommes-nous ?</h2>
-          <p class="text-gray-700 text-lg leading-relaxed mb-4">
-            Le <strong>Montataire Basket-ball</strong> est un club dynamique situé dans l’Oise,
-            ouvert à tous les âges et niveaux. Nous proposons des sections
-            <strong>jeunes, loisirs et compétitions</strong>, encadrées par des coachs passionnés.
-          </p>
-          <p class="text-gray-700 text-lg leading-relaxed">
-            Depuis plus de 30 ans, notre mission est de former les joueuses et joueurs à travers des
-            valeurs fortes : <em>respect, engagement, esprit d’équipe</em>.
-          </p>
-        </div>
-
-        <!-- Image -->
-        <div class="relative">
-          <img src="images/team-action.jpg" alt="Équipe de Montataire en action" class="rounded-xl shadow-lg w-full object-cover" loading="lazy" />
-          <span class="absolute top-2 left-2 bg-secondary text-white text-xs px-3 py-1 rounded-full shadow">Depuis 1990</span>
+    
+<main id="main-content" role="main">
+<section class="relative h-[85vh] min-h-[500px] bg-primary bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('images/hero-bg.jpg');" aria-label="Accueil - Montataire Basket-ball">
+  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative z-10 px-6 max-w-3xl mx-auto text-white animate-fade-in space-y-6" data-animate>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">Montataire Basket-ball</h1>
+    <p class="text-lg sm:text-xl md:text-2xl">Un club familial et compétitif depuis plus de 30 ans.</p>
+    <a href="contact.html" class="inline-block bg-secondary hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-full transition transform hover:scale-105 shadow-lg" aria-label="Nous contacter">
+      Nous contacter
+    </a>
+  </div>
+</section>
+<section class="relative w-full overflow-hidden py-12 bg-gray-50" aria-label="Carrousel d'actualités">
+  <div class="max-w-6xl mx-auto px-6">
+    <div id="carousel-slides" class="relative">
+      <!-- Slide 1 -->
+      <div class="carousel-item flex flex-col md:flex-row items-center gap-8 active">
+        <img src="images/slide1.jpg" alt="Tournoi U13" class="w-full md:w-1/2 rounded-xl shadow-lg object-cover">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-primary mb-4">🏀 Tournoi U13 - Résultats</h3>
+          <p class="text-gray-700 mb-4">Nos jeunes ont brillé au tournoi régional à Beauvais. Bravo à toute l’équipe !</p>
+          <a href="actualites.html" class="inline-block bg-secondary hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-full transition transform hover:scale-105">Lire plus</a>
         </div>
       </div>
-    </section>
-
-    <!-- ACTUALITÉS -->
-    <section class="py-16 bg-white animate-fade-in" data-animate>
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-primary mb-12">Actualités du club</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-lg transition">
-            <h3 class="font-semibold text-secondary text-lg mb-2">🏀 Tournoi U13 - Résultats</h3>
-            <p class="text-sm text-gray-600 mb-3">Nos jeunes ont brillé au tournoi régional à Beauvais. Bravo à toute l’équipe !</p>
-            <a href="actualites.html" class="text-primary font-medium text-sm hover:underline">Lire plus</a>
-          </div>
-          <div class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-lg transition">
-            <h3 class="font-semibold text-secondary text-lg mb-2">📢 Reprise des entraînements</h3>
-            <p class="text-sm text-gray-600 mb-3">Les séances reprennent à partir du lundi 10 septembre. Planning à consulter en ligne.</p>
-            <a href="actualites.html" class="text-primary font-medium text-sm hover:underline">Lire plus</a>
-          </div>
-          <div class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-lg transition">
-            <h3 class="font-semibold text-secondary text-lg mb-2">🎉 Portes ouvertes 2025</h3>
-            <p class="text-sm text-gray-600 mb-3">Venez découvrir le club et essayer gratuitement le basket ! Samedi 14h-17h au gymnase.</p>
-            <a href="actualites.html" class="text-primary font-medium text-sm hover:underline">Lire plus</a>
-          </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item hidden flex-col md:flex-row items-center gap-8">
+        <img src="images/slide2.jpg" alt="Reprise des entraînements" class="w-full md:w-1/2 rounded-xl shadow-lg object-cover">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-primary mb-4">📢 Reprise des entraînements</h3>
+          <p class="text-gray-700 mb-4">Les séances reprennent à partir du lundi 10 septembre. Planning à consulter en ligne.</p>
+          <a href="actualites.html" class="inline-block bg-secondary hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-full transition transform hover:scale-105">Voir le planning</a>
         </div>
       </div>
-    </section>
-
-    <!-- NOS VALEURS -->
-    <section class="py-16 bg-gray-50 animate-fade-in" data-animate>
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-primary mb-12">Nos valeurs</h2>
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-          <div class="p-6 bg-white shadow rounded-xl">
-            <h3 class="text-xl font-semibold text-secondary mb-3">Esprit d’équipe</h3>
-            <p class="text-gray-600 text-sm">Chaque joueur compte. Ensemble, on va plus loin.</p>
-          </div>
-          <div class="p-6 bg-white shadow rounded-xl">
-            <h3 class="text-xl font-semibold text-secondary mb-3">Formation</h3>
-            <p class="text-gray-600 text-sm">Des entraînements adaptés à chaque niveau, pour progresser toute l’année.</p>
-          </div>
-          <div class="p-6 bg-white shadow rounded-xl">
-            <h3 class="text-xl font-semibold text-secondary mb-3">Passion</h3>
-            <p class="text-gray-600 text-sm">Du basket avant tout, avec le cœur et l’envie de se dépasser.</p>
-          </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item hidden flex-col md:flex-row items-center gap-8">
+        <img src="images/slide3.jpg" alt="Portes ouvertes" class="w-full md:w-1/2 rounded-xl shadow-lg object-cover">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-primary mb-4">🎉 Portes ouvertes 2025</h3>
+          <p class="text-gray-700 mb-4">Venez découvrir le club et essayer gratuitement le basket ! Samedi 14h-17h au gymnase.</p>
+          <a href="actualites.html" class="inline-block bg-secondary hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-full transition transform hover:scale-105">En savoir plus</a>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- CTA FINAL -->
-    <section class="py-20 bg-primary text-white text-center animate-fade-in" data-animate>
-      <h2 class="text-3xl font-bold mb-4">Rejoins le Montataire Basket-ball</h2>
-      <p class="mb-6 text-lg">Une ambiance familiale, un encadrement sérieux, et la passion du jeu.</p>
-      <a href="inscription.html" class="bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition transform hover:scale-105">Je m’inscris</a>
-    </section>
+    <!-- Controls -->
+    <div class="flex justify-center mt-8 gap-4">
+      <button id="prevSlide" class="text-primary hover:text-secondary text-3xl">&#10094;</button>
+      <button id="nextSlide" class="text-primary hover:text-secondary text-3xl">&#10095;</button>
+    </div>
+  </div>
+</section>
+<script src="js/carousel.js" defer></script>
+
+      <!-- PRÉSENTATION CLUB -->
+      <section class="py-20 bg-white animate-fade-in" data-animate aria-label="Présentation du club">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Qui sommes-nous ?</h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+              Le <strong>Montataire Basket-ball</strong> est un club dynamique situé dans l’Oise,
+              ouvert à tous les âges et niveaux. Nous proposons des sections
+              <strong>jeunes, loisirs et compétitions</strong>, encadrées par des coachs passionnés.
+            </p>
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Depuis plus de 30 ans, notre mission est de former les joueuses et joueurs à travers des
+              valeurs fortes : <em>respect, engagement, esprit d’équipe</em>.
+            </p>
+          </div>
+          <div class="relative">
+            <img src="images/team-action.jpg" alt="Équipe de Montataire en action" class="rounded-xl shadow-lg w-full object-cover" loading="lazy" />
+            <span class="absolute top-2 left-2 bg-secondary text-white text-xs px-3 py-1 rounded-full shadow">Depuis 1990</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACTUALITÉS -->
+      <section class="py-16 bg-white animate-fade-in" data-animate aria-labelledby="titre-actus">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 id="titre-actus" class="text-3xl font-bold text-center text-primary mb-12">Actualités du club</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <article class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-lg transition">
+              <h3 class="font-semibold text-secondary text-lg mb-2">🏀 Tournoi U13 - Résultats</h3>
+              <p class="text-sm text-gray-600 mb-3">Nos jeunes ont brillé au tournoi régional à Beauvais. Bravo à toute l’équipe !</p>
+              <a href="actualites.html" class="text-primary font-medium text-sm hover:underline">Lire plus</a>
+            </article>
+            <article class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-lg transition">
+              <h3 class="font-semibold text-secondary text-lg mb-2">📢 Reprise des entraînements</h3>
+              <p class="text-sm text-gray-600 mb-3">Les séances reprennent à partir du lundi 10 septembre. Planning à consulter en ligne.</p>
+              <a href="actualites.html" class="text-primary font-medium text-sm hover:underline">Lire plus</a>
+            </article>
+            <article class="bg-gray-100 rounded-xl p-6 shadow hover:shadow-lg transition">
+              <h3 class="font-semibold text-secondary text-lg mb-2">🎉 Portes ouvertes 2025</h3>
+              <p class="text-sm text-gray-600 mb-3">Venez découvrir le club et essayer gratuitement le basket ! Samedi 14h-17h au gymnase.</p>
+              <a href="actualites.html" class="text-primary font-medium text-sm hover:underline">Lire plus</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALEURS -->
+      <section class="py-16 bg-gray-50 animate-fade-in" data-animate aria-label="Nos valeurs">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center text-primary mb-12">Nos valeurs</h2>
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="p-6 bg-white shadow rounded-xl">
+              <h3 class="text-xl font-semibold text-secondary mb-3">Esprit d’équipe</h3>
+              <p class="text-gray-600 text-sm">Chaque joueur compte. Ensemble, on va plus loin.</p>
+            </div>
+            <div class="p-6 bg-white shadow rounded-xl">
+              <h3 class="text-xl font-semibold text-secondary mb-3">Formation</h3>
+              <p class="text-gray-600 text-sm">Des entraînements adaptés à chaque niveau, pour progresser toute l’année.</p>
+            </div>
+            <div class="p-6 bg-white shadow rounded-xl">
+              <h3 class="text-xl font-semibold text-secondary mb-3">Passion</h3>
+              <p class="text-gray-600 text-sm">Du basket avant tout, avec le cœur et l’envie de se dépasser.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="py-20 bg-primary text-white text-center animate-fade-in" data-animate>
+        <h2 class="text-3xl font-bold mb-4">Rejoins le Montataire Basket-ball</h2>
+        <p class="mb-6 text-lg">Une ambiance familiale, un encadrement sérieux, et la passion du jeu.</p>
+        <a href="inscription.html" class="bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition transform hover:scale-105" aria-label="S'inscrire au club">Je m’inscris</a>
+      </section>
+    </main>
 
     <!-- FOOTER -->
+    <footer class="text-center py-6">
+      <div class="flex justify-center space-x-4">
+        <a href="https://www.facebook.com/MontataireBasketball" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f fa-fw text-xl text-primary hover:text-secondary"></i>
+        </a>
+        <a href="https://www.instagram.com/montatairebasketball" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram fa-fw text-xl text-primary hover:text-secondary"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="js/footer.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/animations.js" defer></script>
-
-    <!-- Bannière cookies -->
-    <div id="cookie-consent" class="cookie-consent">
-      <p>Ce site utilise des cookies pour améliorer l'expérience utilisateur. En poursuivant votre navigation, vous acceptez l'utilisation des cookies. <a href="#">En savoir plus</a></p>
-      <button id="accept-cookies" class="btn-accept">Accepter</button>
-      <button id="reject-cookies" class="btn-reject">Refuser</button>
-    </div>
-
-    <!-- Scripts -->
     <script src="js/main.js" defer></script>
+    <script src="js/cookies.js" defer></script>
+
+    <noscript>
+      <div class="bg-red-100 text-red-800 p-4 text-center">Ce site nécessite JavaScript pour fonctionner correctement.</div>
+    </noscript>
+<script src="js/anniversaire.js" defer></script>
+
+
   </body>
 </html>

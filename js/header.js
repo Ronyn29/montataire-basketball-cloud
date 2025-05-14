@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <li><a href="reglement.html" class="block px-4 py-2 hover:bg-blue-800">Fonctionnement & Règlement</a></li>
             <li><a href="tarifs.html" class="block px-4 py-2 hover:bg-blue-800">Cotisations & Inscriptions</a></li>
             <li><a href="dirigeants.html" class="block px-4 py-2 hover:bg-blue-800">Équipe encadrante</a></li>
-            <li><a href="planning.html" class="block px-4 py-2 hover:bg-blue-800">Entraînements & Matchs</a></li>
+            <li><a href="planning-mixte.html" class="block px-4 py-2 hover:bg-blue-800">Entraînements & Matchs</a></li>
             <li><a href="arbitrage.html" class="block px-4 py-2 hover:bg-blue-800">École d’arbitrage</a></li>
           </ul>
         </li>

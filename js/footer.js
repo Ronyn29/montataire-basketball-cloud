@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
       <img src="images/logo.png" alt="Logo Montataire Basket-ball" class="h-20 w-auto" loading="lazy">
       <p class="text-sm text-gray-300">Club officiel de basket à Montataire</p>
       <div class="flex space-x-4 mt-2">
-        <a href="https://www.instagram.com/montataire_basket_ball/" target="_blank" aria-label="Instagram" class="hover:text-secondary transition">
+        <a href="https://www.instagram.com/montatairebasketball" target="_blank" aria-label="Instagram" class="hover:text-secondary transition">
           <i class="fab fa-instagram text-xl"></i>
         </a>
-        <a href="https://www.facebook.com/montatairebasketball" target="_blank" aria-label="Facebook" class="hover:text-secondary transition">
-          <i class="fab fa-facebook text-xl"></i>
+        <a href="https://www.facebook.com/MontataireBasketball" target="_blank" aria-label="Facebook" class="hover:text-secondary transition">
+          <i class="fab fa-facebook-f text-xl"></i>
         </a>
       </div>
     </div>

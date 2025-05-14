@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cotisations & Inscriptions - Montataire Basket-ball</title>
+  <title>Tarifs - Montataire Basket-ball</title>
+  <meta name="description" content="Découvrez les tarifs d'inscription au Montataire Basket-ball : par catégorie, options de paiement, réductions possibles.">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -24,93 +27,97 @@
           }
         }
       }
-    };
+    }
   </script>
+
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
-  <meta name="description" content="Tarifs et modalités d'inscription au Montataire Basket-ball. Découvrez les cotisations selon les catégories d'âge et les documents nécessaires.">
 </head>
-
 <body class="bg-white text-black">
   <script src="js/header.js" defer></script>
 
-  <main class="max-w-4xl mx-auto px-4 py-16 space-y-12" data-animate>
-    <h1 class="text-3xl font-bold text-primary text-center mb-8">Cotisations & Inscriptions</h1>
+  <!-- En-tête -->
+  <section class="py-16 bg-primary text-white text-center animate-fade-in">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">💰 Tarifs d'inscription</h1>
+    <p class="text-lg md:text-xl text-white/90">Informations sur les cotisations pour la saison en cours</p>
+  </section>
 
-    <!-- Tarifs par catégorie -->
+  <!-- Contenu -->
+  <main class="max-w-4xl mx-auto px-4 py-16 space-y-16 animate-fade-in">
+
     <section>
-      <h2 class="text-xl font-semibold text-secondary mb-4">Tarifs saison 2024–2025</h2>
-      <table class="w-full text-left border border-gray-300 rounded overflow-hidden shadow text-sm">
-        <thead class="bg-primary text-white">
-          <tr>
-            <th class="p-3">Catégorie</th>
-            <th class="p-3">Âge</th>
-            <th class="p-3">Tarif</th>
-          </tr>
-        </thead>
-        <tbody class="bg-white divide-y divide-gray-200">
-          <tr>
-            <td class="p-3">Baby Basket (U7)</td>
-            <td class="p-3">4–6 ans</td>
-            <td class="p-3">60 €</td>
-          </tr>
-          <tr>
-            <td class="p-3">Mini Basket (U9 à U11)</td>
-            <td class="p-3">7–10 ans</td>
-            <td class="p-3">75 €</td>
-          </tr>
-          <tr>
-            <td class="p-3">Jeunes (U13 à U18)</td>
-            <td class="p-3">11–17 ans</td>
-            <td class="p-3">90 €</td>
-          </tr>
-          <tr>
-            <td class="p-3">Seniors</td>
-            <td class="p-3">18 ans et +</td>
-            <td class="p-3">110 €</td>
-          </tr>
-          <tr>
-            <td class="p-3">Loisirs</td>
-            <td class="p-3">Adultes</td>
-            <td class="p-3">80 €</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 class="text-2xl font-bold text-secondary mb-4">📊 Tarifs par catégorie</h2>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm border border-gray-200 rounded-xl">
+          <thead class="bg-primary text-white text-xs uppercase">
+            <tr>
+              <th class="px-4 py-3">Catégorie</th>
+              <th class="px-4 py-3">Âge</th>
+              <th class="px-4 py-3">Tarif annuel</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 text-gray-700">
+            <tr>
+              <td class="px-4 py-3 font-medium">U7</td>
+              <td class="px-4 py-3">Moins de 7 ans</td>
+              <td class="px-4 py-3">60 €</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium">U9 / U11</td>
+              <td class="px-4 py-3">7 – 11 ans</td>
+              <td class="px-4 py-3">80 €</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium">U13 / U15 / U18</td>
+              <td class="px-4 py-3">12 – 18 ans</td>
+              <td class="px-4 py-3">90 €</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium">Seniors</td>
+              <td class="px-4 py-3">+ 18 ans</td>
+              <td class="px-4 py-3">110 €</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium">Loisirs</td>
+              <td class="px-4 py-3">Tous âges</td>
+              <td class="px-4 py-3">70 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <!-- Documents à fournir -->
     <section>
-      <h2 class="text-xl font-semibold text-secondary mb-4">Pièces à fournir</h2>
+      <h2 class="text-2xl font-bold text-secondary mb-4">💡 Réductions & aides</h2>
       <ul class="list-disc list-inside text-gray-700 space-y-2">
-        <li>Formulaire d’inscription rempli et signé (fourni par le club)</li>
-        <li>Certificat médical de non contre-indication (si requis)</li>
-        <li>Photo d'identité</li>
-        <li>Paiement de la cotisation (chèque ou espèces)</li>
+        <li>Réduction pour les fratries : -10€ sur la 2ᵉ inscription.</li>
+        <li>Pass’Sport accepté (aide de l’État jusqu’à 50 €).</li>
       </ul>
     </section>
 
-    <!-- Réductions & infos -->
     <section>
-      <h2 class="text-xl font-semibold text-secondary mb-4">Réductions possibles</h2>
-      <p class="text-gray-700">
-        Des réductions peuvent être appliquées pour les fratries ou les bénéficiaires du Pass'Sport ou Pass Jeunes.  
-        N'hésitez pas à nous contacter pour plus d'informations.
-      </p>
+      <h2 class="text-2xl font-bold text-secondary mb-4">💳 Paiement & inscription</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Règlement par chèque, espèces ou virement bancaire.</li>
+        <li>Possibilité de paiement en plusieurs fois sur demande.</li>
+        <li>Inscription uniquement validée après réception du paiement + dossier complet.</li>
+      </ul>
     </section>
 
-    <!-- Contact -->
-    <section>
-      <h2 class="text-xl font-semibold text-secondary mb-4">Nous contacter</h2>
-      <p class="text-gray-700">
-        Email : <a href="mailto:montatairebb@gmail.com" class="text-secondary">montatairebb@gmail.com</a><br>
-        Téléphone : 06 00 00 00 00<br>
-        Ou via notre <a href="contact.html" class="text-secondary underline hover:text-red-600">page de contact</a>.
-      </p>
+    <section class="text-center pt-6">
+      <a href="inscription.html" class="inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition transform hover:scale-105">
+        Je m'inscris
+      </a>
     </section>
   </main>
 
+  <!-- Footer + Scripts -->
   <script src="js/footer.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/cookies.js" defer></script>
+<script src="js/anniversaire.js" defer></script>
+
 </body>
 </html>
