@@ -3,7 +3,6 @@ backend:
   name: github
   repo: Ronyn29/montataire-basket
   branch: main
-  auth_scope: repo
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
