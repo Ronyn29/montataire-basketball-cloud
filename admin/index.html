@@ -18,66 +18,6 @@
   </head>
   <body>
     <h1>Chargement du CMS…</h1>
-
-    <!-- Chargement du CMS depuis le CDN -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-    <!-- Chargement de la configuration personnalisée -->
-    <script>
-      window.CMS_MANUAL_INIT = true;
-      window.CMS_ENV = "production";
-
-      CMS.init({
-        config: {
-          backend: {
-            name: "github",
-            repo: "Ronyn29/montataire-basket",
-            branch: "main"
-          },
-          site_url: "https://montatairebasketball.netlify.app",
-          display_url: "https://montatairebasketball.netlify.app",
-          media_folder: "images/uploads",
-          public_folder: "/images/uploads",
-          collections: [
-            {
-              name: "actualites",
-              label: "Actualités",
-              folder: "data/actualites",
-              create: true,
-              slug: "{{slug}}",
-              fields: [
-                { label: "Titre", name: "titre", widget: "string" },
-                { label: "Contenu", name: "body", widget: "markdown" },
-                { label: "Date", name: "date", widget: "datetime" }
-              ]
-            },
-            {
-              name: "planning",
-              label: "Planning Entraînements",
-              files: [
-                {
-                  label: "Planning principal",
-                  name: "planning",
-                  file: "data/planning.json",
-                  fields: [
-                    {
-                      label: "Entraînements",
-                      name: "entraienements",
-                      widget: "list",
-                      fields: [
-                        { label: "Équipe", name: "equipe", widget: "string" },
-                        { label: "Jour", name: "jour", widget: "string" },
-                        { label: "Horaire", name: "horaire", widget: "string" },
-                        { label: "Lieu", name: "lieu", widget: "string" }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      });
-    </script>
   </body>
 </html>
