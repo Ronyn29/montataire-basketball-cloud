@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Inscription - Montataire Basket-ball
+  </title>
+  <meta content="Inscrivez-vous au Montataire Basket-ball pour la saison en cours. Rejoignez le club via ce formulaire simple et rapide." name="description"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="bg-white text-black">
+  <script defer="" src="js/header.js">
+  </script>
+  <!-- En-tête cohérent et stylé -->
+  <section class="relative h-[50vh] min-h-[300px] bg-primary bg-cover bg-center flex items-center justify-center">
+   <div class="absolute inset-0 bg-black/60">
+   </div>
+   <div class="relative z-10 text-white text-center animate-fade-in">
+    <h1 class="text-4xl font-bold mb-2" data-editable="true">
+     📝 Inscription
+    </h1>
+    <p class="text-lg text-white/90" data-editable="true">
+     Rejoignez Montataire Basket-ball pour une saison pleine d'&eacute;nergie !
+    </p>
+   </div>
+  </section>
+  <!-- Formulaire -->
+  <main class="max-w-3xl mx-auto px-4 py-16 space-y-10 animate-fade-in">
+   <form action="/contact-success.html" class="space-y-10 bg-gray-100 p-8 rounded-xl shadow-md" data-netlify="true" method="POST" name="inscription" netlify-honeypot="bot-field">
+    <input name="form-name" type="hidden" value="inscription"/>
+    <p class="hidden">
+     <label>
+      Ne pas remplir :
+      <input name="bot-field"/>
+     </label>
+    </p>
+    <!-- Infos joueur -->
+    <div>
+     <h2 class="text-xl font-semibold text-secondary mb-4" data-editable="true">
+      🎯 Informations du joueur
+     </h2>
+     <label class="block text-sm font-medium text-gray-700">
+      Nom complet
+     </label>
+     <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary" name="nom" required="" type="text"/>
+     <label class="block text-sm font-medium text-gray-700 mt-4">
+      Date de naissance
+     </label>
+     <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary" name="naissance" required="" type="date"/>
+     <label class="block text-sm font-medium text-gray-700 mt-4">
+      Cat&eacute;gorie
+     </label>
+     <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary" name="categorie" required="">
+      <option value="">
+       -- S&eacute;lectionner --
+      </option>
+      <option>
+       U7 (moins de 7 ans)
+      </option>
+      <option>
+       U9
+      </option>
+      <option>
+       U11
+      </option>
+      <option>
+       U13
+      </option>
+      <option>
+       U15
+      </option>
+      <option>
+       U18
+      </option>
+      <option>
+       Seniors
+      </option>
+      <option>
+       Loisirs
+      </option>
+     </select>
+    </div>
+    <!-- Coordonnées -->
+    <div>
+     <h2 class="text-xl font-semibold text-secondary mb-4" data-editable="true">
+      📞 Coordonn&eacute;es
+     </h2>
+     <label class="block text-sm font-medium text-gray-700">
+      Adresse email
+     </label>
+     <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary" name="email" required="" type="email"/>
+     <label class="block text-sm font-medium text-gray-700 mt-4">
+      T&eacute;l&eacute;phone
+     </label>
+     <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary" name="tel" required="" type="tel"/>
+     <label class="block text-sm font-medium text-gray-700 mt-4">
+      Adresse postale
+     </label>
+     <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary" name="adresse" required="" type="text"/>
+    </div>
+    <!-- Bouton -->
+    <div class="pt-4 text-center">
+     <button class="bg-secondary text-white font-semibold py-3 px-8 rounded-full hover:bg-red-700 transition" type="submit">
+      Envoyer l'inscription
+     </button>
+    </div>
+   </form>
+  </main>
+  <!-- Footer -->
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/main.js">
+  </script>
+  <script defer="" src="js/cookies.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+ </body>
+</html>

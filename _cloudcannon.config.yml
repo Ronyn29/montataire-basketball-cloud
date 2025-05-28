@@ -1,0 +1,19 @@
+
+collections_config:
+  news:
+    _label: Actualités
+    folder: news
+    create: true
+    fields:
+      - type: text
+        name: title
+        label: Titre
+      - type: datetime
+        name: date
+        label: Date
+      - type: image
+        name: image
+        label: Image
+      - type: textarea
+        name: body
+        label: Contenu

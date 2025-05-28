@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   &Eacute;quipes Seniors - Montataire Basket-ball
+  </title>
+  <meta content="Pr&eacute;sentation des &eacute;quipes seniors du Montataire Basket-ball. Acc&eacute;dez aux r&eacute;sultats, calendriers et classements officiels via la FFBB." name="description"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="bg-white text-black">
+  <script defer="" src="js/header.js">
+  </script>
+  <!-- En-tête unifié et cohérent -->
+  <section class="relative h-[50vh] min-h-[300px] bg-primary bg-cover bg-center flex items-center justify-center">
+   <div class="absolute inset-0 bg-black/60">
+   </div>
+   <div class="relative z-10 text-white text-center animate-fade-in">
+    <h1 class="text-4xl font-bold mb-2" data-editable="true">
+     🏀 &Eacute;quipes Seniors
+    </h1>
+    <p class="text-lg text-white/90" data-editable="true">
+     D&eacute;couvrez les &eacute;quipes seniors du Montataire Basket-ball
+    </p>
+   </div>
+  </section>
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-16 animate-fade-in" data-animate="">
+   <h2 class="text-3xl font-bold text-primary text-center mb-6" data-editable="true">
+    Nos &eacute;quipes seniors
+   </h2>
+   <!-- Info FFBB -->
+   <section class="bg-blue-50 border-l-4 border-primary p-4 rounded-md shadow text-sm text-gray-700 max-w-3xl mx-auto">
+    📌 Les calendriers, classements et r&eacute;sultats sont disponibles en temps r&eacute;el sur le site officiel de la FFBB.
+    <br/>
+    ➡️ Cliquez sur les boutons de chaque &eacute;quipe pour acc&eacute;der &agrave; leur fiche officielle.
+   </section>
+   <!-- SM1 -->
+   <section class="bg-gray-100 p-6 rounded-xl shadow">
+    <h3 class="text-2xl font-bold text-secondary mb-2" data-editable="true">
+     Seniors Masculins 1
+    </h3>
+    <p class="text-gray-700" data-editable="true">
+     🏀 Division : Pr&eacute;-R&eacute;gion (D&eacute;partementale 1)
+    </p>
+    <a class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition" data-editable="true" href="https://competitions.ffbb.com/ligues/hdf/comites/0060/clubs/hdf0060021" target="_blank">
+     🔗 Voir sur FFBB
+    </a>
+   </section>
+   <!-- SM2 -->
+   <section class="bg-gray-100 p-6 rounded-xl shadow">
+    <h3 class="text-2xl font-bold text-secondary mb-2" data-editable="true">
+     Seniors Masculins 2
+    </h3>
+    <p class="text-gray-700" data-editable="true">
+     🏀 Division : D&eacute;partementale 2
+    </p>
+    <a class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition" data-editable="true" href="https://competitions.ffbb.com/ligues/hdf/comites/0060/clubs/hdf0060021" target="_blank">
+     🔗 Voir sur FFBB
+    </a>
+   </section>
+   <!-- SM3 -->
+   <section class="bg-gray-100 p-6 rounded-xl shadow">
+    <h3 class="text-2xl font-bold text-secondary mb-2" data-editable="true">
+     Seniors Masculins 3
+    </h3>
+    <p class="text-gray-700" data-editable="true">
+     🏀 Division : D&eacute;partementale 4
+    </p>
+    <a class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition" data-editable="true" href="https://competitions.ffbb.com/ligues/hdf/comites/0060/clubs/hdf0060021" target="_blank">
+     🔗 Voir sur FFBB
+    </a>
+   </section>
+   <!-- SF1 -->
+   <section class="bg-gray-100 p-6 rounded-xl shadow">
+    <h3 class="text-2xl font-bold text-secondary mb-2" data-editable="true">
+     Seniors F&eacute;minines 1
+    </h3>
+    <p class="text-gray-700" data-editable="true">
+     🏀 Division : Pr&eacute;-R&eacute;gionale F&eacute;minine
+    </p>
+    <a class="mt-4 inline-block bg-primary text-white px-5 py-2 rounded hover:bg-blue-800 transition" data-editable="true" href="https://competitions.ffbb.com/ligues/hdf/comites/0060/clubs/hdf0060021" target="_blank">
+     🔗 Voir sur FFBB
+    </a>
+   </section>
+   <!-- CTA pour rejoindre une équipe -->
+   <section class="text-center">
+    <a class="mt-10 inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition" data-editable="true" href="inscription.html">
+     Rejoindre une &eacute;quipe
+    </a>
+   </section>
+  </main>
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Vie du Club - Montataire Basket-ball
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+  <meta content="D&eacute;couvrez toute la vie du club Montataire Basket-ball : r&egrave;glements, tarifs, planning des entra&icirc;nements, &eacute;quipe encadrante, partenaires et &eacute;cole d'arbitrage." name="description"/>
+ </head>
+ <body class="bg-white text-black">
+  <script defer="" src="js/header.js">
+  </script>
+  <main class="max-w-6xl mx-auto px-4 py-16" data-animate="">
+   <h1 class="text-4xl font-bold text-primary text-center mb-12" data-editable="true">
+    Vie du Club
+   </h1>
+   <p class="text-center text-gray-700 mb-16 max-w-3xl mx-auto" data-editable="true">
+    Tout ce qu&rsquo;il faut savoir sur le club : inscriptions, fonctionnement, &eacute;quipes encadrantes, planning des entra&icirc;nements et plus encore.
+   </p>
+   <!-- Grid de liens -->
+   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Règlement -->
+    <a class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition" href="reglement.html">
+     <h2 class="text-xl font-bold text-primary mb-2" data-editable="true">
+      Fonctionnement &amp; R&egrave;glement
+     </h2>
+     <p class="text-gray-600 text-sm" data-editable="true">
+      D&eacute;couvrez nos r&egrave;gles de vie, le cadre &eacute;ducatif et sportif du club.
+     </p>
+    </a>
+    <!-- Tarifs -->
+    <a class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition" href="tarifs.html">
+     <h2 class="text-xl font-bold text-primary mb-2" data-editable="true">
+      Cotisations &amp; Inscriptions
+     </h2>
+     <p class="text-gray-600 text-sm" data-editable="true">
+      Toutes les informations sur les frais d&rsquo;adh&eacute;sion et les modalit&eacute;s d&rsquo;inscription.
+     </p>
+    </a>
+    <!-- Partenaires -->
+    <a class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition" href="partenaires.html">
+     <h2 class="text-xl font-bold text-primary mb-2" data-editable="true">
+      Nos Partenaires
+     </h2>
+     <p class="text-gray-600 text-sm" data-editable="true">
+      Merci &agrave; celles et ceux qui soutiennent le club toute l&rsquo;ann&eacute;e.
+     </p>
+    </a>
+    <!-- Dirigeants -->
+    <a class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition" href="dirigeants.html">
+     <h2 class="text-xl font-bold text-primary mb-2" data-editable="true">
+      &Eacute;quipe encadrante
+     </h2>
+     <p class="text-gray-600 text-sm" data-editable="true">
+      D&eacute;couvrez qui sont les b&eacute;n&eacute;voles, coachs et membres du bureau.
+     </p>
+    </a>
+    <!-- Planning -->
+    <a class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition" href="planning.html">
+     <h2 class="text-xl font-bold text-primary mb-2" data-editable="true">
+      Entra&icirc;nements &amp; Matchs
+     </h2>
+     <p class="text-gray-600 text-sm" data-editable="true">
+      Horaires des entra&icirc;nements, lieux, matchs officiels et &eacute;v&eacute;nements &agrave; venir.
+     </p>
+    </a>
+    <!-- Arbitrage -->
+    <a class="block bg-gray-100 hover:bg-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition" href="arbitrage.html">
+     <h2 class="text-xl font-bold text-primary mb-2" data-editable="true">
+      &Eacute;cole d&rsquo;arbitrage
+     </h2>
+     <p class="text-gray-600 text-sm" data-editable="true">
+      Formation, sensibilisation et parcours pour devenir arbitre officiel.
+     </p>
+    </a>
+   </div>
+  </main>
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+ </body>
+</html>

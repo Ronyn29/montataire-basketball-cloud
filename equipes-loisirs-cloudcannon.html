@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   &Eacute;quipe Loisirs - Montataire Basket-ball
+  </title>
+  <meta content="D&eacute;couvrez notre section loisirs : basketball pour adultes, dans une ambiance conviviale, sans comp&eacute;tition." name="description"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="bg-white text-black">
+  <script defer="" src="js/header.js">
+  </script>
+  <!-- En-tête cohérent et stylé -->
+  <section class="py-16 bg-primary text-white text-center">
+   <h1 class="text-4xl font-bold mb-2" data-editable="true">
+    🏀 &Eacute;quipe Loisirs
+   </h1>
+   <p class="text-lg text-white/90" data-editable="true">
+    Basketball pour adultes, dans une ambiance conviviale et sans comp&eacute;tition.
+   </p>
+  </section>
+  <main class="max-w-4xl mx-auto px-4 py-16 space-y-12 animate-fade-in">
+   <!-- Présentation -->
+   <section class="bg-gray-100 p-6 rounded-xl shadow text-gray-700 space-y-4">
+    <p data-editable="true">
+     La section loisirs du Montataire Basket-ball s&rsquo;adresse aux adultes souhaitant pratiquer le basket sans pression de comp&eacute;tition, dans une ambiance d&eacute;tendue et bienveillante.
+    </p>
+    <p data-editable="true">
+     Ouverte &agrave; tous et toutes, quel que soit le niveau ou l'exp&eacute;rience, cette section permet de garder la forme, partager de bons moments, et retrouver le plaisir du jeu collectif.
+    </p>
+   </section>
+   <!-- Infos pratiques -->
+   <section class="bg-white border border-gray-200 p-6 rounded-xl shadow space-y-2">
+    <h2 class="text-xl font-bold text-secondary mb-3" data-editable="true">
+     📅 Infos pratiques
+    </h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-1">
+     <li>
+      <strong>
+       Public :
+      </strong>
+      Adultes (hommes &amp; femmes)
+     </li>
+     <li>
+      <strong>
+       Comp&eacute;tition :
+      </strong>
+      Aucune &ndash; pratique loisirs uniquement
+     </li>
+     <li>
+      <strong>
+       Jour :
+      </strong>
+      Mercredi soir
+     </li>
+     <li>
+      <strong>
+       Horaire :
+      </strong>
+      20h00 &agrave; 22h00
+     </li>
+     <li>
+      <strong>
+       Lieu :
+      </strong>
+      Salle Marcel Coene, Montataire
+     </li>
+    </ul>
+   </section>
+   <!-- Call to action -->
+   <section class="text-center">
+    <a class="mt-6 inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition" data-editable="true" href="inscription.html">
+     Rejoindre la section loisirs
+    </a>
+   </section>
+  </main>
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+ </body>
+</html>

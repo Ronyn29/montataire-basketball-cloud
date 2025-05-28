@@ -1,12 +1,15 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const headerHTML = `
 <header class="bg-primary text-white sticky top-0 z-40 shadow-md transition-all duration-300" role="banner">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-2PffNL3fzjF1guCOnZJ05FezP9GJByuVV1XabHGM+GVjwA2uBvQb8vHzrMDH0D7zbxEu3S/F1U0ozlHsJuozsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <div class="container mx-auto px-6 py-3 flex flex-col md:flex-row justify-between items-center">
-    
+
     <!-- LOGO + BURGER -->
     <div class="flex justify-between items-center w-full md:w-auto">
       <a href="index.html" aria-label="Accueil" class="mb-3 md:mb-0">
-        <img src="images/logo.png" alt="Logo Montataire Basket-ball" class="h-16 md:h-20 transition hover:scale-105 hover:rotate-[-5deg]" width="80" height="80" loading="lazy">
+        <img src="images/logo.png" alt="Logo Montataire Basket-ball" class="h-20 md:h-28 transition hover:scale-105 hover:rotate-[-5deg]" width="112" height="112" loading="lazy">
       </a>
       <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-secondary p-2 rounded" aria-label="Ouvrir le menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

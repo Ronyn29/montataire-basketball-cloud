@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Plan du site - Montataire Basket-ball
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="bg-white text-black">
+  <script defer="" src="js/header.js">
+  </script>
+  <main class="max-w-4xl mx-auto px-4 py-16" data-animate="">
+   <h1 class="text-3xl font-bold mb-6 text-primary" data-editable="true">
+    Plan du site
+   </h1>
+   <ul class="list-disc ml-6 space-y-2 text-gray-800">
+    <li data-editable="true">
+     <a class="text-secondary hover:underline" data-editable="true" href="index.html">
+      Accueil
+     </a>
+    </li>
+    <li data-editable="true">
+     <a class="text-secondary hover:underline" data-editable="true" href="histoire.html">
+      Histoire du club
+     </a>
+    </li>
+    <li data-editable="true">
+     <a class="text-secondary hover:underline" data-editable="true" href="equipes-seniors.html">
+      &Eacute;quipes
+     </a>
+    </li>
+    <li data-editable="true">
+     <a class="text-secondary hover:underline" data-editable="true" href="contact.html">
+      Contact
+     </a>
+    </li>
+    <li data-editable="true">
+     <a class="text-secondary hover:underline" data-editable="true" href="mentions-legales.html">
+      Mentions l&eacute;gales
+     </a>
+    </li>
+    <li data-editable="true">
+     <a class="text-secondary hover:underline" data-editable="true" href="confidentialite.html">
+      Politique de confidentialit&eacute;
+     </a>
+    </li>
+    <li data-editable="true">
+     <a class="text-secondary hover:underline" data-editable="true" href="cgu.html">
+      Conditions d&rsquo;utilisation
+     </a>
+    </li>
+   </ul>
+  </main>
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+ </body>
+</html>

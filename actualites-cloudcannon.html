@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Actualit&eacute;s - Montataire Basket-ball
+  </title>
+  <meta content="Toutes les actualit&eacute;s du club Montataire Basket-ball : &eacute;v&eacute;nements, r&eacute;sultats, annonces et vie du club." name="description"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <!-- Swiper CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="bg-white text-black">
+  <!-- Header -->
+  <script defer="" src="js/header.js">
+  </script>
+  <!-- En-tête simple -->
+  <section class="py-16 bg-primary text-white text-center animate-fade-in" data-animate="">
+   <h1 class="text-4xl md:text-5xl font-bold mb-2">
+    📰 Actualit&eacute;s du club
+   </h1>
+   <p class="text-lg md:text-xl text-white/90">
+    Les derni&egrave;res infos, r&eacute;sultats et &eacute;v&eacute;nements du Montataire Basket-Ball
+   </p>
+  </section>
+  <!-- Carrousel d'actus -->
+  <section class="py-12 bg-white animate-fade-in" data-animate="">
+   <div class="max-w-6xl mx-auto px-6">
+    <div class="swiper">
+     <div class="swiper-wrapper">
+      <div class="swiper-slide bg-gray-100 rounded-xl p-6 shadow">
+       <h3 class="text-secondary font-bold text-lg mb-2">
+        📣 Nouvelle tenue officielle 2025
+       </h3>
+       <p class="text-sm text-gray-700 mb-4">
+        Merci &agrave; nos partenaires pour leur contribution.
+       </p>
+       <a class="text-primary text-sm font-medium hover:underline" href="#">
+        Lire plus
+       </a>
+      </div>
+      <div class="swiper-slide bg-gray-100 rounded-xl p-6 shadow">
+       <h3 class="text-secondary font-bold text-lg mb-2">
+        🏀 R&eacute;sultats U13
+       </h3>
+       <p class="text-sm text-gray-700 mb-4">
+        Victoire &agrave; domicile ce week-end !
+       </p>
+       <a class="text-primary text-sm font-medium hover:underline" href="#">
+        Lire plus
+       </a>
+      </div>
+      <div class="swiper-slide bg-gray-100 rounded-xl p-6 shadow">
+       <h3 class="text-secondary font-bold text-lg mb-2">
+        🎉 Tournoi interquartiers
+       </h3>
+       <p class="text-sm text-gray-700 mb-4">
+        Un bel &eacute;v&eacute;nement pour tous les &acirc;ges.
+       </p>
+       <a class="text-primary text-sm font-medium hover:underline" href="#">
+        Lire plus
+       </a>
+      </div>
+     </div>
+     <div class="swiper-pagination mt-4">
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contenu principal -->
+  <main class="max-w-5xl mx-auto px-4 py-16 space-y-16 animate-fade-in" data-animate="">
+   <!-- Actu 1 -->
+   <article class="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition p-6 space-y-4">
+    <div class="flex items-center justify-between text-sm text-gray-500">
+     <span>
+      📅 31 mars 2025
+     </span>
+     <span class="text-secondary font-medium">
+      U13
+     </span>
+    </div>
+    <h2 class="text-2xl font-bold text-secondary">
+     🏀 R&eacute;sultats du week-end : les U13 brillent &agrave; domicile
+    </h2>
+    <p class="text-gray-700">
+     Nos benjamins et benjamines (U13) ont remport&eacute; leurs matchs respectifs samedi &agrave; domicile ! Bravo aux jeunes et aux coachs pour leur engagement sur le terrain.
+    </p>
+    <img alt="Victoire U13" class="rounded-lg w-full max-h-96 object-cover" loading="lazy" src="images/actu-u13.jpg"/>
+   </article>
+   <!-- Actu 2 -->
+   <article class="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition p-6 space-y-4">
+    <div class="flex items-center justify-between text-sm text-gray-500">
+     <span>
+      📅 24 mars 2025
+     </span>
+     <span class="text-secondary font-medium">
+      Tournoi
+     </span>
+    </div>
+    <h2 class="text-2xl font-bold text-secondary">
+     🎉 Tournoi interquartiers : un vrai succ&egrave;s !
+    </h2>
+    <p class="text-gray-700">
+     Merci &agrave; tous les participants, b&eacute;n&eacute;voles et partenaires pour cet &eacute;v&eacute;nement convivial qui a rassembl&eacute; petits et grands autour de notre passion commune.
+    </p>
+    <img alt="Tournoi local" class="rounded-lg w-full max-h-96 object-cover" loading="lazy" src="images/tournoi.jpg"/>
+   </article>
+   <!-- Actu 3 -->
+   <article class="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-lg transition p-6 space-y-4">
+    <div class="flex items-center justify-between text-sm text-gray-500">
+     <span>
+      📅 15 mars 2025
+     </span>
+     <span class="text-secondary font-medium">
+      &Eacute;quipement
+     </span>
+    </div>
+    <h2 class="text-2xl font-bold text-secondary">
+     📣 Nouvelle tenue officielle 2025
+    </h2>
+    <p class="text-gray-700">
+     D&eacute;couvrez nos nouvelles tenues pour la saison ! Merci &agrave; nos partenaires pour leur contribution. Disponible tr&egrave;s bient&ocirc;t &agrave; la boutique du club.
+    </p>
+    <img alt="Tenues officielles 2025" class="rounded-lg w-full max-h-96 object-cover" loading="lazy" src="images/maillot-2025.jpg"/>
+   </article>
+  </main>
+  <!-- Footer + Scripts -->
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/main.js">
+  </script>
+  <script defer="" src="js/cookies.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+  </script>
+  <script>
+   const swiper = new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1,
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      autoplay: {
+        delay: 5000
+      }
+    });
+  </script>
+ </body>
+</html>

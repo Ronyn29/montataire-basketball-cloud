@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Contact - Montataire Basket-ball
+  </title>
+  <meta content="Contactez le Montataire Basket-ball pour toute question, proposition ou demande de partenariat." name="description"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="bg-white text-black">
+  <!-- Header -->
+  <script defer="" src="js/header.js">
+  </script>
+  <main class="max-w-3xl mx-auto px-4 py-16 animate-fade-in" data-animate="">
+   <h1 class="text-3xl font-bold text-primary text-center mb-10" data-editable="true">
+    Contactez-nous
+   </h1>
+   <!-- Section de contact -->
+   <section class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow space-y-6">
+    <p class="text-gray-700 text-sm leading-relaxed" data-editable="true">
+     Une question ? Une proposition ? Envie de nous rejoindre ou de devenir partenaire ?
+        Utilisez le formulaire ci-dessous ou contactez-nous directement.
+    </p>
+    <!-- Coordonnées rapides -->
+    <div class="text-sm text-gray-600 space-y-1">
+     <p>
+      📧
+      <a class="text-primary font-medium hover:underline" data-editable="true" href="mailto:montatairebb@gmail.com">
+       montatairebb@gmail.com
+      </a>
+     </p>
+     <p data-editable="true">
+      📍 Complexe Sportif Marcel Coene, 60160 Montataire
+     </p>
+    </div>
+    <!-- Formulaire -->
+    <form action="/contact-success.html" class="space-y-5" data-netlify="true" method="POST" name="contact">
+     <input name="form-name" type="hidden" value="contact"/>
+     <div>
+      <label class="block text-sm font-semibold mb-1" for="nom">
+       Nom
+       <span class="text-secondary" data-editable="true">
+        *
+       </span>
+      </label>
+      <input class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary" id="nom" name="nom" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold mb-1" for="email">
+       Adresse email
+       <span class="text-secondary" data-editable="true">
+        *
+       </span>
+      </label>
+      <input class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary" id="email" name="email" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold mb-1" for="raison">
+       Raison du message
+       <span class="text-secondary" data-editable="true">
+        *
+       </span>
+      </label>
+      <select class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary" id="raison" name="raison" required="">
+       <option disabled="" selected="" value="">
+        -- Choisir une raison --
+       </option>
+       <option value="partenariat">
+        Demande de partenariat
+       </option>
+       <option value="b&eacute;n&eacute;volat">
+        Proposition de b&eacute;n&eacute;volat
+       </option>
+       <option value="question">
+        Autre question
+       </option>
+      </select>
+     </div>
+     <div>
+      <label class="block text-sm font-semibold mb-1" for="message">
+       Message
+       <span class="text-secondary" data-editable="true">
+        *
+       </span>
+      </label>
+      <textarea class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary" id="message" name="message" required="" rows="5"></textarea>
+     </div>
+     <div class="text-center pt-2">
+      <button class="bg-secondary hover:bg-red-600 text-white font-semibold px-8 py-3 rounded-full transition transform hover:scale-105" type="submit">
+       Envoyer le message
+      </button>
+     </div>
+    </form>
+   </section>
+  </main>
+  <!-- Footer + JS -->
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/main.js">
+  </script>
+  <script defer="" src="js/cookies.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+ </body>
+</html>

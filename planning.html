@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Entraînements & Matchs - Montataire Basket-ball</title>
   <meta name="description" content="Planning des entraînements et matchs du Montataire Basket-ball : jours, horaires, équipes et lieux des séances.">
-
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -29,7 +27,6 @@
       }
     };
   </script>
-
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
 </head>
@@ -38,18 +35,13 @@
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-white text-black p-2 z-50">
     Aller au contenu principal
   </a>
-  <!-- Header -->
   <script src="js/header.js" defer></script>
-
-  <!-- En-tête -->
   <section class="py-16 bg-primary text-white text-center animate-fade-in" data-animate>
     <h1 class="text-4xl md:text-5xl font-bold mb-2">📅 Entraînements & Matchs</h1>
     <p class="text-lg md:text-xl text-white/90">Tous les créneaux hebdomadaires & matchs à venir</p>
   </section>
 
   <main class="max-w-6xl mx-auto px-4 py-16 space-y-20 animate-fade-in" data-animate>
-
-    <!-- Entraînements -->
     <section>
       <h2 class="text-2xl font-bold text-secondary mb-6">📘 Planning des entraînements</h2>
       <div class="overflow-x-auto rounded-xl shadow border border-gray-200">
@@ -63,84 +55,33 @@
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-200 text-gray-700">
-            <tr>
-              <td class="p-3 font-medium">U7</td>
-              <td class="p-3">Mercredi</td>
-              <td class="p-3">14h00 – 15h00</td>
-              <td class="p-3">Salle Marcel Coene</td>
-            </tr>
-            <tr>
-              <td class="p-3 font-medium">U11</td>
-              <td class="p-3">Lundi</td>
-              <td class="p-3">17h30 – 19h00</td>
-              <td class="p-3">Salle Marcel Coene</td>
-            </tr>
-            <tr>
-              <td class="p-3 font-medium">U13</td>
-              <td class="p-3">Mercredi</td>
-              <td class="p-3">15h00 – 16h30</td>
-              <td class="p-3">Salle Marcel Coene</td>
-            </tr>
-            <tr>
-              <td class="p-3 font-medium">Seniors</td>
-              <td class="p-3">Lundi & Jeudi</td>
-              <td class="p-3">20h00 – 22h00</td>
-              <td class="p-3">Salle Marcel Coene</td>
-            </tr>
-            <tr>
-              <td class="p-3 font-medium">Loisirs</td>
-              <td class="p-3">Mercredi</td>
-              <td class="p-3">20h00 – 22h00</td>
-              <td class="p-3">Salle Marcel Coene</td>
-            </tr>
+            <tr><td class="p-3 font-medium">U7 (Baby basket)</td><td class="p-3">Mardi</td><td class="p-3">17h30 – 18h30</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">U7 (Baby basket)</td><td class="p-3">Mercredi</td><td class="p-3">11h30 – 12h30</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">U9 (Mini-Poussins)</td><td class="p-3">Mardi</td><td class="p-3">18h30 – 20h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">Mini-Poussins & Poussins</td><td class="p-3">Mercredi</td><td class="p-3">14h00 – 16h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">U11</td><td class="p-3">Jeudi</td><td class="p-3">18h00 – 20h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">U13 & U15 masculins</td><td class="p-3">Lundi</td><td class="p-3">18h00 – 20h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">U13 F & G</td><td class="p-3">Mercredi</td><td class="p-3">16h00 – 18h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">U13 & U15 féminines</td><td class="p-3">Vendredi</td><td class="p-3">18h00 – 20h00</td><td class="p-3">Salle Bellard</td></tr>
+            <tr><td class="p-3 font-medium">U15 masculins</td><td class="p-3">Mercredi</td><td class="p-3">18h00 – 20h00</td><td class="p-3">Salle Bellard</td></tr>
+            <tr><td class="p-3 font-medium">U17 & U20 masculins</td><td class="p-3">Mercredi</td><td class="p-3">18h00 – 20h00</td><td class="p-3">Salle Malraux</td></tr>
+            <tr><td class="p-3 font-medium">U17 masculins</td><td class="p-3">Vendredi</td><td class="p-3">18h00 – 20h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">U17 féminines & Séniors Filles</td><td class="p-3">Vendredi</td><td class="p-3">20h00 – 22h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">Seniors Masculins & Juniors</td><td class="p-3">Lundi</td><td class="p-3">20h00 – 22h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">Seniors Masculins A & B</td><td class="p-3">Jeudi</td><td class="p-3">20h00 – 22h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">Seniors Féminines</td><td class="p-3">Mardi</td><td class="p-3">20h00 – 22h00</td><td class="p-3">Salle Marcel Coene</td></tr>
+            <tr><td class="p-3 font-medium">Loisirs & Shooting Seniors</td><td class="p-3">Mercredi</td><td class="p-3">20h00 – 22h00</td><td class="p-3">Salle Marcel Coene</td></tr>
           </tbody>
         </table>
       </div>
     </section>
-
-    <!-- Matchs à venir stylés -->
-    <section>
-      <h2 class="text-2xl font-bold text-secondary mb-8">🏀 Matchs à venir</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- Match 1 -->
-        <div class="p-6 bg-gray-50 border-l-4 border-secondary rounded-lg shadow">
-          <p class="text-sm text-gray-500 mb-1">Samedi 12 avril</p>
-          <h3 class="text-lg font-bold text-secondary">U13 vs Clermont</h3>
-          <p class="text-sm text-gray-700">⏰ 15h00 — 📍 Domicile</p>
-        </div>
-
-        <!-- Match 2 -->
-        <div class="p-6 bg-gray-50 border-l-4 border-primary rounded-lg shadow">
-          <p class="text-sm text-gray-500 mb-1">Dimanche 13 avril</p>
-          <h3 class="text-lg font-bold text-primary">Seniors vs Beauvais</h3>
-          <p class="text-sm text-gray-700">⏰ 17h00 — 📍 Extérieur</p>
-        </div>
-
-        <!-- Match 3 -->
-        <div class="p-6 bg-gray-50 border-l-4 border-secondary rounded-lg shadow">
-          <p class="text-sm text-gray-500 mb-1">Samedi 19 avril</p>
-          <h3 class="text-lg font-bold text-secondary">U11 vs Nogent</h3>
-          <p class="text-sm text-gray-700">⏰ 14h00 — 📍 Domicile</p>
-        </div>
-
-        <!-- Match 4 -->
-        <div class="p-6 bg-gray-50 border-l-4 border-secondary rounded-lg shadow">
-          <p class="text-sm text-gray-500 mb-1">Dimanche 20 avril</p>
-          <h3 class="text-lg font-bold text-secondary">Seniors vs Montdidier</h3>
-          <p class="text-sm text-gray-700">⏰ 18h00 — 📍 Domicile</p>
-        </div>
-      </div>
-      <p class="mt-6 text-sm text-gray-500 text-center">📌 Pour les changements de dernière minute, suivez nos réseaux sociaux ou consultez l'affichage au gymnase.</p>
-    </section>
   </main>
 
-  <!-- Footer + Scripts -->
   <script src="js/footer.js" defer></script>
   <script src="js/menu.js" defer></script>
   <script src="js/animations.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/cookies.js" defer></script>
-<script src="js/anniversaire.js" defer></script>
-
+  <script src="js/anniversaire.js" defer></script>
 </body>
 </html>

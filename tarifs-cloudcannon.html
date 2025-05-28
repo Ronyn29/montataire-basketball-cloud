@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Tarifs - Montataire Basket-ball
+  </title>
+  <meta content="D&eacute;couvrez les tarifs d'inscription au Montataire Basket-ball : par cat&eacute;gorie, options de paiement, r&eacute;ductions possibles." name="description"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="bg-white text-black">
+  <script defer="" src="js/header.js">
+  </script>
+  <!-- En-tête -->
+  <section class="py-16 bg-primary text-white text-center animate-fade-in">
+   <h1 class="text-4xl md:text-5xl font-bold mb-2" data-editable="true">
+    💰 Tarifs d'inscription
+   </h1>
+   <p class="text-lg md:text-xl text-white/90" data-editable="true">
+    Informations sur les cotisations pour la saison en cours
+   </p>
+  </section>
+  <!-- Contenu -->
+  <main class="max-w-4xl mx-auto px-4 py-16 space-y-16 animate-fade-in">
+   <section>
+    <h2 class="text-2xl font-bold text-secondary mb-4" data-editable="true">
+     📊 Tarifs par cat&eacute;gorie
+    </h2>
+    <div class="overflow-x-auto">
+     <table class="w-full text-left text-sm border border-gray-200 rounded-xl">
+      <thead class="bg-primary text-white text-xs uppercase">
+       <tr>
+        <th class="px-4 py-3">
+         Cat&eacute;gorie
+        </th>
+        <th class="px-4 py-3">
+         &Acirc;ge
+        </th>
+        <th class="px-4 py-3">
+         Tarif annuel
+        </th>
+       </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200 text-gray-700">
+       <tr>
+        <td class="px-4 py-3 font-medium">
+         U7
+        </td>
+        <td class="px-4 py-3">
+         Moins de 7 ans
+        </td>
+        <td class="px-4 py-3">
+         60 &euro;
+        </td>
+       </tr>
+       <tr>
+        <td class="px-4 py-3 font-medium">
+         U9 / U11
+        </td>
+        <td class="px-4 py-3">
+         7 &ndash; 11 ans
+        </td>
+        <td class="px-4 py-3">
+         80 &euro;
+        </td>
+       </tr>
+       <tr>
+        <td class="px-4 py-3 font-medium">
+         U13 / U15 / U18
+        </td>
+        <td class="px-4 py-3">
+         12 &ndash; 18 ans
+        </td>
+        <td class="px-4 py-3">
+         90 &euro;
+        </td>
+       </tr>
+       <tr>
+        <td class="px-4 py-3 font-medium">
+         Seniors
+        </td>
+        <td class="px-4 py-3">
+         + 18 ans
+        </td>
+        <td class="px-4 py-3">
+         110 &euro;
+        </td>
+       </tr>
+       <tr>
+        <td class="px-4 py-3 font-medium">
+         Loisirs
+        </td>
+        <td class="px-4 py-3">
+         Tous &acirc;ges
+        </td>
+        <td class="px-4 py-3">
+         70 &euro;
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+   <section>
+    <h2 class="text-2xl font-bold text-secondary mb-4" data-editable="true">
+     💡 R&eacute;ductions &amp; aides
+    </h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+     <li data-editable="true">
+      R&eacute;duction pour les fratries : -10&euro; sur la 2ᵉ inscription.
+     </li>
+     <li data-editable="true">
+      Pass&rsquo;Sport accept&eacute; (aide de l&rsquo;&Eacute;tat jusqu&rsquo;&agrave; 50 &euro;).
+     </li>
+    </ul>
+   </section>
+   <section>
+    <h2 class="text-2xl font-bold text-secondary mb-4" data-editable="true">
+     💳 Paiement &amp; inscription
+    </h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+     <li data-editable="true">
+      R&egrave;glement par ch&egrave;que, esp&egrave;ces ou virement bancaire.
+     </li>
+     <li data-editable="true">
+      Possibilit&eacute; de paiement en plusieurs fois sur demande.
+     </li>
+     <li data-editable="true">
+      Inscription uniquement valid&eacute;e apr&egrave;s r&eacute;ception du paiement + dossier complet.
+     </li>
+    </ul>
+   </section>
+   <section class="text-center pt-6">
+    <a class="inline-block bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition transform hover:scale-105" data-editable="true" href="inscription.html">
+     Je m'inscris
+    </a>
+   </section>
+  </main>
+  <!-- Footer + Scripts -->
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/main.js">
+  </script>
+  <script defer="" src="js/cookies.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+ </body>
+</html>

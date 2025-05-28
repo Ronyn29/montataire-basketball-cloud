@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Histoire - Montataire Basket-ball
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script>
+   tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3A77D5',
+            secondary: '#EA230F'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(1rem)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out forwards'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="images/logo.png" rel="icon" type="image/png"/>
+ </head>
+ <body class="bg-white text-black">
+  <script defer="" src="js/header.js">
+  </script>
+  <main class="max-w-6xl mx-auto px-4 py-16 space-y-20" data-animate="">
+   <!-- INTRO -->
+   <section class="text-center">
+    <h1 class="text-4xl font-bold text-primary mb-4" data-editable="true">
+     Notre Histoire
+    </h1>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto" data-editable="true">
+     Depuis sa cr&eacute;ation, Montataire Basket-ball ne cesse de grandir autour d'une passion commune : le basket. Retour sur les moments cl&eacute;s de notre aventure humaine et sportive.
+    </p>
+   </section>
+   <!-- FRISE CHRONO -->
+   <section>
+    <h2 class="text-2xl font-semibold text-secondary mb-6" data-editable="true">
+     Moments marquants
+    </h2>
+    <div class="border-l-4 border-primary pl-6 space-y-10">
+     <div>
+      <p class="text-sm text-gray-400" data-editable="true">
+       1991
+      </p>
+      <h3 class="text-lg font-bold text-primary" data-editable="true">
+       Cr&eacute;ation du club
+      </h3>
+      <p class="text-gray-600" data-editable="true">
+       Un petit groupe de passionn&eacute;s d&eacute;cide de lancer une section basket &agrave; Montataire. L'aventure commence !
+      </p>
+     </div>
+     <div>
+      <p class="text-sm text-gray-400" data-editable="true">
+       2005
+      </p>
+      <h3 class="text-lg font-bold text-primary" data-editable="true">
+       Premi&egrave;re mont&eacute;e en d&eacute;partemental 1
+      </h3>
+      <p class="text-gray-600" data-editable="true">
+       L'&eacute;quipe senior masculine r&eacute;alise une saison exceptionnelle et grimpe au classement.
+      </p>
+     </div>
+     <div>
+      <p class="text-sm text-gray-400" data-editable="true">
+       2018
+      </p>
+      <h3 class="text-lg font-bold text-primary" data-editable="true">
+       Cr&eacute;ation de la section f&eacute;minine
+      </h3>
+      <p class="text-gray-600" data-editable="true">
+       Le club ouvre ses portes aux basketteuses, avec une volont&eacute; forte de mixit&eacute; et d&rsquo;&eacute;galit&eacute;.
+      </p>
+     </div>
+     <div>
+      <p class="text-sm text-gray-400" data-editable="true">
+       2024
+      </p>
+      <h3 class="text-lg font-bold text-primary" data-editable="true">
+       Nouvelle identit&eacute; visuelle
+      </h3>
+      <p class="text-gray-600" data-editable="true">
+       Nouveau logo, nouveau site, nouvelle ambition pour les ann&eacute;es &agrave; venir.
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- FIGURES DU CLUB -->
+   <section>
+    <h2 class="text-2xl font-semibold text-secondary mb-6" data-editable="true">
+     Ils ont marqu&eacute; le club
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+     <div class="p-6 bg-gray-50 rounded-xl shadow-md">
+      <img alt="Coach 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" data-editable="true" src="images/coach1.jpg"/>
+      <h3 class="text-lg font-bold" data-editable="true">
+       Jean-Luc Martin
+      </h3>
+      <p class="text-gray-600 text-sm" data-editable="true">
+       Pr&eacute;sident fondateur (1991&ndash;2005), visionnaire et passionn&eacute;.
+      </p>
+     </div>
+     <div class="p-6 bg-gray-50 rounded-xl shadow-md">
+      <img alt="Joueuse 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" data-editable="true" src="images/joueuse1.jpg"/>
+      <h3 class="text-lg font-bold" data-editable="true">
+       Sophie Leroy
+      </h3>
+      <p class="text-gray-600 text-sm" data-editable="true">
+       Premi&egrave;re capitaine f&eacute;minine du club, mod&egrave;le d'engagement.
+      </p>
+     </div>
+     <div class="p-6 bg-gray-50 rounded-xl shadow-md">
+      <img alt="B&eacute;n&eacute;vole 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" data-editable="true" src="images/benevole1.jpg"/>
+      <h3 class="text-lg font-bold" data-editable="true">
+       Mustapha El Hadji
+      </h3>
+      <p class="text-gray-600 text-sm" data-editable="true">
+       B&eacute;n&eacute;vole embl&eacute;matique, toujours pr&eacute;sent les jours de match.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <script defer="" src="js/footer.js">
+  </script>
+  <script defer="" src="js/menu.js">
+  </script>
+  <script defer="" src="js/animations.js">
+  </script>
+  <script defer="" src="js/anniversaire.js">
+  </script>
+ </body>
+</html>
